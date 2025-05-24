@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membantu usaha kecil naik level</title>
+    
+
+    <link rel="icon" type="image/png" sizes="16x16"  href="assets/iconlogo/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./dist/main.css">
+    <link rel="stylesheet" href="./src/input.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white dark:bg-primaryBlue">
+    <script src="dist/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Navigasi bar-->
+    <div class="w-full h-[80px] fixed bg-pinkColor/90 dark:bg-primaryBlue/30 backdrop-blur-sm flex z-40">
+        <nav class="container mx-auto h-[80px] bg-transparent flex items-center justify-between px-5">
+            <div class="flex items-center">
+                <img src="./assets/icon/logoblue2-01edit 5.png" class="w-[30px] h-[60px] mb-1" loading="lazy" alt="">
+                <h6 class="text-black dark:text-white font-montserrat font-semibold text-[26px]">ENZITE<span class="text-red-500 font-montserrat font-semibold text-[26px]">ID</span></h6>
+            </div>
+            <div class="flex items-center hidden lg:block">
+                <a href="" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Home</a>
+                <a href="" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Tetang Kami</a>
+                <a href="" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Fitur</a>
+                <a href="" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Harga</a>
+                
+                <a class="font-raleway font-semibold p-3 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-dark dark:text-white text-[20px transition-all duration-200" href="">Kontak</a>
+            </div>
+            
+            <button id="hamburger" onclick="toggleHamburger()" class="block lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
+                <span class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
+                <span class="block h-0.5 w-6 dark:bg-white bg-black transition-opacity duration-300 group-[.open]:opacity-0"></span>
+                <span class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
+            </button>
+            
+            
+        </nav> 
+            <div id="sidebar" class="fixed z-40 top-0 left-0 h-[100vh] w-72 bg-pinkColor backdrop-blur-lg dark:backdrop-blur-lg dark:bg-primaryBlue transform -translate-x-full lg:-translate-x-full transition-transform duration-500 mt-[80px] flex flex-col p-5 ">
+                <a href="#" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Home</a>
+                <a href="#" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Tentang Kami</a>
+                <a href="#" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Fitur</a>
+                <a href="#" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Harga</a>
+                <a href="#" class="font-raleway font-semibold py-5 px-5 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-black dark:text-white text-[20px]">Kontak</a>      
+            </div>
+    </div>
+    
+    
+    <!-- homepage -->
+    <div class="w-full min-h-[100svh] bg-white dark:bg-primaryBlue">
+        <div class="container mx-auto min-h-[100svh] bg-white dark:bg-primaryBlue flex flex-col items-center justify-center px-5 py-24 relative">   
+                <!-- element tambahan dan icon tambahan -->
+                <!-- Element tambahan mengambang KIRI--> 
+                <div class="cloudAnimationtb absolute left-24 md:left-[160px] lg:left-[250px] xl:left-[340px] 2xl: // top-16 md:top-[130px] lg:top-[160px] xl:top-[120px]  2xl:top-[30vh] //// w-[100px] xl:w-[200px] h-[108px] xl:h-[215px] bg-supportBlue blur-[20px] xl:blur-[40px] rounded-full animate-float z-10"></div>
+                <div class="cloudAnimationbt absolute left-0 md:left-[70px] lg:left-[150px] xl:left-[160px] 2xl: // top-0 md:top-[210px] lg:top-[210px] xl:top-[250px]  2xl:top-[40vh] //// w-[145px] xl:w-[290px] h-[150px] xl:h-[300px] bg-supportPink blur-[20px] xl:blur-[40px] rounded-full animate-float-slow z-10"></div>
+                
+                <!-- Element tambahan mengambang KANAN -->
+                <div class="cloudAnimationbt absolute right-24 md:right-[160px] lg:right-[250px] xl:right-[310px] 2xl: // bottom-16 md:top-[260px] lg:top-[230px] xl:top-[300px] 2xl:top-[45vh] //// w-[100px] xl:w-[200px] h-[108px] xl:h-[215px] bg-supportBlue blur-[20px] xl:blur-[40px] rounded-full animate-float z-10"></div>
+                <div class="cloudAnimationtb absolute right-0 md:right-[60px] lg:right-[150px] xl:right-[130px] 2xl: // bottom-0 md:top-[140px] lg:top-[140px] xl:top-[100px] 2xl:top-[30vh] //// w-[145px] xl:w-[290px] h-[150px] xl:h-[300px] bg-supportPink blur-[20px] xl:blur-[40px] rounded-full animate-float-slow z-10"></div>
+                
+            <div class="flex items-center justify-start z-30 gap-3 mb-5">
+                <span class="font-montserrat font-bold text-[16px] text-black dark:text-white">Dark</span>
+                <div class="relative w-[70px] h-[30px]">
+                    <input type="checkbox" onclick="toggleDarkMode()" id="themebutton" class="sr-only peer">
+                    <label for="themebutton" class="bg-white peer-checked:bg-supportPink cursor-pointer absolute inset-0 rounded-full transition-colors duration-500"></label>
+                    <span class="w-[20px] h-[20px] bg-supportBlue absolute rounded-full left-1 top-1 peer-checked:bg-white peer-checked:left-10 transition-all duration-500 pointer-events-none"></span>
+                </div>
+                <span class="font-montserrat font-bold text-[16px] text-black dark:text-white">Light</span>
+            </div>
+              
+            <h1 class="flex items-start font-raleway font-semibold max-w-[1100px] lg:max-w-[700px] xl:max-w-[1100px] md:px-10 lg:px-7 xl:px-0 text-[20px] md:text-[26px] lg:text-[26px] xl:text-[42px] text-black dark:text-white text-center relative z-20">
+                <img class="iconAnimation absolute left-0 lg:-left-3 //// -top-14 md:-top-5" src="assets/icon/Social media.svg" alt="">
+                “Jadikan bisnis kecilmu lebih profesional dengan website digital yang mudah dan terjangkau!”
+                <img class="iconAnimation absolute right-0 md:right-3 xl:right-10 //// -bottom-10 md:-bottom-3 xl:bottom-0" src="assets/icon/Startup.svg" alt="">
+            </h1>
+
+            
+            <div class="flex justify-center items-center z-20"> 
+                <span class="text-black dark:text-white text-[20px] xl:text-[26px] font-raleway font-semibold mt-2 mr-2 xl:mr-3 xl:mt-5">dengan</span>
+                <img src="./assets/images/logoblue2-01edit 4.svg" class="w-[40px] xl:w-[70px] h-[75px] xl:h-[150px] mb-2 xl:mb-5" loading="lazy" alt="">
+                    <h2 class="text-black dark:text-white text-[30px] xl:text-[60px] font-montserrat font-bold">ENZITE<span class="text-red-500 text-[30px] xl:text-[60px] font-montserrat font-bold">ID</span></h2>
+                </div>
+
+                <!-- button mulai dan kontak -->
+                <div class="flex justify-center items-center gap-[30px] mt-10">
+                    
+                    <a href="#" class="
+                        flex items-center justify-center z-30
+                        w-[120px] md:w-[160px] h-[50px] text-[20px] 
+                        rounded-[30px] bg-white text-black 
+                        font-raleway font-semibold hover:font-bold 
+                        hover:text-supportBlue shadow-lg dark:shadow-xl hover:shadow-supportBlue
+                        dark:shadow-white dark:hover:shadow-supportBlue 
+                        transition duration-500">
+                        Mulai
+                    </a>
+                    <a href="" class="relative z-30 font-raleway font-semibold texh-black dark:hover:text-supportBlue dark:text-white text-[16px] md:text-[20px] hover:text-supportBlue duration-500">Hubungi sekarang</a>
+                </div>
+        </div>
+    </div>
+    <!-- percobaan-->
+     
+    <!-- Tentang Kami Page -->
+     <div class="bg-pinkColor dark:bg-secondBlue w-full min-h-[100svh]">
+        <div class="container mx-auto min-h-[100svh] bg-pinkColor dark:bg-secondBlue h-full px-5 py-24 flex justify-center items-center">
+            <div class="w-[1100px] lg:max-w-[800px] xl:max-w-[1100px] flex flex-col gap-[35px]">
+                <h1 class="font-montserrat font-semibold text-[26px] md:text-[42px] text-black dark:text-white" data-aos="fade-right">TENTANG KAMI</h1>
+                <p class="font-raleway font-medium text-[16px] lg:text-[20px] text-black dark:text-white" data-aos="fade-up">Di era digital saat ini, memiliki website bukan lagi sekadar pilihan, tetapi sudah menjadi kebutuhan bagi bisnis yang ingin berkembang dan menjangkau lebih banyak pelanggan. Kami hadir sebagai solusi, bagi kamu yang ingin memiliki website profesional tanpa harus ribet dengan hal teknis. Dengan pengalaman dalam pembuatan website untuk berbagai jenis usaha, kami siap membantu menciptakan website yang tidak hanya menarik secara visual, tetapi juga mudah digunakan dan dioptimalkan agar bisnis kamu semakin berkembang.</p>
+
+                <p class="font-raleway font-medium text-[16px] lg:text-[20px] text-black dark:text-white" data-aos="fade-up">Kami memahami bahwa setiap bisnis memiliki kebutuhan yang berbeda. Oleh karena itu, kami menawarkan berbagai jenis website, mulai dari website bisnis, toko online, landing page, portofolio, hingga website perusahaan. Semua website yang kami buat responsif, artinya bisa diakses dengan baik di berbagai perangkat seperti HP, tablet, dan laptop. Selain itu, kami juga memastikan setiap website sudah SEO-friendly, sehingga lebih mudah ditemukan di Google dan mendatangkan lebih banyak pelanggan potensial.</p>
+
+                <button class="flex items-center">
+                      <a class=" font-raleway font-sembold text-[16px] lg:text-[20px] text-black dark:text-white underline" href="">Cek Media Sosial Kami</a>
+                      <span class="material-symbols-outlined no-underline text-black dark:text-white">
+                        arrow_forward
+                    </span>
+                </button>
+              
+            </div>
+        </div>
+     </div>
+
+
+    <!-- fitur page -->
+    <div class="bg-pinkColor dark:bg-primaryBlue w-full min-h-[100svh]">
+        <div class="container 
+        mx-auto min-h-[100svh] bg-pinkColor dark:bg-primaryBlue h-full px-5 py-20 
+        flex justify-center items-center">
+
+        <div class="relative bg-transparent h-[500px] w-full overflow-hidden flex justify-center">
+            <span class="flex items-start">
+                <img class="animate-animationScrollDown absolute left-0 w-[50%] ml-16 skew-x-6 object-cover" src="assets/images/Template UMKM Website 1.png" alt="">
+            </span>
+            <span class="flex items-end">
+                <img class="animate-animationScrollUp absolute right-0 w-[50%] skew-x-6 object-cover " src="assets/images/Template UMKM Website 2.png" alt="">
+            </span>
+            
+            
+        </div>
+            
+        </div>
+
+     </div>
+     
+</body>
+</html>

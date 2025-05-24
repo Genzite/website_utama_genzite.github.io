@@ -1,0 +1,46 @@
+.cloudAnimationbt{
+    animation: cloudbt 3s ease-in-out infinite;
+}
+
+@keyframes cloudbt{
+    0% {
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.cloudAnimationtb{
+    animation: cloudtb 3s ease-out infinite;
+}
+
+@keyframes cloudtb{
+    0%{
+        transform: translateY(0px);
+    }50%{
+        transform: translateY(-30px);
+    }100%{
+        transform: translateY(0px);
+    }
+}
+
+.iconAnimation {
+    animation: icon 3s ease-in-out infinite;
+}
+
+@keyframes icon{
+    0%{
+        transform: translateY(0px);        
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
