@@ -13,23 +13,26 @@
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./dist/main.css">
     <link rel="stylesheet" href="./src/input.css">
+   <!-- Font tulisan -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <!-- Google Material Symbols Outlined (cukup sekali) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <!-- Jika perlu yang "Rounded", tambahkan satu lagi -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-white dark:bg-primaryBlue">
     <script src="dist/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Navigasi bar-->
-    <div class="w-full h-[80px] fixed bg-pinkColor/90 dark:bg-primaryBlue/30 backdrop-blur-sm flex z-40">
+    <div class="w-full h-[80px] fixed bg-pinkColor/90 dark:bg-primaryBlue/50 backdrop-blur-md flex z-40">
         <nav class="container mx-auto h-[80px] bg-transparent flex items-center justify-between px-5">
-            <div class="flex items-center">
-                <img src="./assets/icon/logoblue2-01edit 5.png" class="w-[30px] h-[60px] mb-1" loading="lazy" alt="">
-                <h6 class="text-black dark:text-white font-montserrat font-semibold text-[26px]">ENZITE<span class="text-red-500 font-montserrat font-semibold text-[26px]">ID</span></h6>
+            <div class="flex items-center gap-1">
+                <img src="./assets/images/logoblue2-01edit 4.svg" class="w-[30px] h-[60px] mb-1" loading="lazy" alt="">
+                <h1 class="text-black dark:text-white font-montserrat font-semibold text-[26px]">GENZITE<span class="text-red-500 text-[26px]">ID</span></h1>
             </div>
             <div class="flex items-center hidden lg:block">
-                <a href="" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Home</a>
+                <a href="" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Beranda</a>
                 <a href="" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Tetang Kami</a>
                 <a href="" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Fitur</a>
                 <a href="" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Harga</a>
@@ -46,7 +49,7 @@
             
         </nav> 
             <div id="sidebar" class="fixed z-40 top-0 left-0 h-[100vh] w-72 bg-pinkColor backdrop-blur-lg dark:backdrop-blur-lg dark:bg-primaryBlue transform -translate-x-full lg:-translate-x-full transition-transform duration-500 mt-[80px] flex flex-col p-5 ">
-                <a href="#" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Home</a>
+                <a href="#" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Beranda</a>
                 <a href="#" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Tentang Kami</a>
                 <a href="#" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Fitur</a>
                 <a href="#" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Harga</a>
@@ -67,7 +70,7 @@
                 <div class="cloudAnimationbt absolute right-24 md:right-[160px] lg:right-[250px] xl:right-[310px] 2xl: // bottom-16 md:top-[260px] lg:top-[230px] xl:top-[300px] 2xl:top-[45vh] //// w-[100px] xl:w-[200px] h-[108px] xl:h-[215px] bg-supportBlue blur-[20px] xl:blur-[40px] rounded-full animate-float z-10"></div>
                 <div class="cloudAnimationtb absolute right-0 md:right-[60px] lg:right-[150px] xl:right-[130px] 2xl: // bottom-0 md:top-[140px] lg:top-[140px] xl:top-[100px] 2xl:top-[30vh] //// w-[145px] xl:w-[290px] h-[150px] xl:h-[300px] bg-supportPink blur-[20px] xl:blur-[40px] rounded-full animate-float-slow z-10"></div>
                 
-            <div class="flex items-center justify-start z-30 gap-3 mb-5">
+            <div  data-aos="fade-down" data-aos-duration="2500" class="flex items-center justify-start z-30 gap-3 mb-5">
                 <span class="font-montserrat font-bold text-[16px] text-black dark:text-white">Dark</span>
                 <div class="relative w-[70px] h-[30px]">
                     <input type="checkbox" onclick="toggleDarkMode()" id="themebutton" class="sr-only peer">
@@ -77,22 +80,22 @@
                 <span class="font-montserrat font-bold text-[16px] text-black dark:text-white">Light</span>
             </div>
               
-            <h1 class="flex items-start font-raleway font-semibold max-w-[1100px] lg:max-w-[700px] xl:max-w-[1100px] md:px-10 lg:px-7 xl:px-0 text-[20px] md:text-[26px] lg:text-[26px] xl:text-[42px] text-black dark:text-white text-center relative z-20">
+            <h1 data-aos="fade-down" data-aos-duration="2500" class="flex items-start font-raleway font-semibold max-w-[1100px] lg:max-w-[700px] xl:max-w-[1100px] md:px-10 lg:px-7 xl:px-0 text-[20px] md:text-[26px] lg:text-[26px] xl:text-[42px] text-black dark:text-white text-center relative z-20">
                 <img class="iconAnimation absolute left-0 lg:-left-3 //// -top-14 md:-top-5" src="assets/icon/Social media.svg" alt="">
                 “Jadikan bisnis kecilmu lebih profesional dengan website digital yang mudah dan terjangkau!”
                 <img class="iconAnimation absolute right-0 md:right-3 xl:right-10 //// -bottom-10 md:-bottom-3 xl:bottom-0" src="assets/icon/Startup.svg" alt="">
             </h1>
 
             
-            <div class="flex justify-center items-center z-20"> 
+            <div  data-aos="fade-down" data-aos-duration="2500" class="flex justify-center items-center z-20"> 
                 <span class="text-black dark:text-white text-[20px] xl:text-[26px] font-raleway font-semibold mt-2 mr-2 xl:mr-3 xl:mt-5">dengan</span>
                 <img src="./assets/images/logoblue2-01edit 4.svg" class="w-[40px] xl:w-[70px] h-[75px] xl:h-[150px] mb-2 xl:mb-5" loading="lazy" alt="">
                     <h2 class="text-black dark:text-white text-[30px] xl:text-[60px] font-montserrat font-bold">ENZITE<span class="text-red-500 text-[30px] xl:text-[60px] font-montserrat font-bold">ID</span></h2>
                 </div>
 
                 <!-- button mulai dan kontak -->
-                <div class="flex justify-center items-center gap-[30px] mt-10">
-                    
+                <div data-aos="fade-up" data-aos-duration="2500" class="flex justify-center items-center gap-[30px] mt-10">
+                     
                     <a href="#" class="
                         flex items-center justify-center z-30
                         w-[120px] md:w-[160px] h-[50px] text-[20px] 
@@ -107,49 +110,308 @@
                 </div>
         </div>
     </div>
-    <!-- percobaan-->
      
     <!-- Tentang Kami Page -->
      <div class="bg-pinkColor dark:bg-secondBlue w-full min-h-[100svh]">
         <div class="container mx-auto min-h-[100svh] bg-pinkColor dark:bg-secondBlue h-full px-5 py-24 flex justify-center items-center">
-            <div class="w-[1100px] lg:max-w-[800px] xl:max-w-[1100px] flex flex-col gap-[35px]">
-                <h1 class="font-montserrat font-semibold text-[26px] md:text-[42px] text-black dark:text-white" data-aos="fade-right">TENTANG KAMI</h1>
+            <article class="w-[1100px] lg:max-w-[800px] xl:max-w-[1100px] flex flex-col gap-[35px]">
+                <h2 class="font-montserrat font-semibold text-[26px] md:text-[42px] text-black dark:text-white" data-aos="fade-right">TENTANG KAMI</h2>
                 <p class="font-raleway font-medium text-[16px] lg:text-[20px] text-black dark:text-white" data-aos="fade-up">Di era digital saat ini, memiliki website bukan lagi sekadar pilihan, tetapi sudah menjadi kebutuhan bagi bisnis yang ingin berkembang dan menjangkau lebih banyak pelanggan. Kami hadir sebagai solusi, bagi kamu yang ingin memiliki website profesional tanpa harus ribet dengan hal teknis. Dengan pengalaman dalam pembuatan website untuk berbagai jenis usaha, kami siap membantu menciptakan website yang tidak hanya menarik secara visual, tetapi juga mudah digunakan dan dioptimalkan agar bisnis kamu semakin berkembang.</p>
 
                 <p class="font-raleway font-medium text-[16px] lg:text-[20px] text-black dark:text-white" data-aos="fade-up">Kami memahami bahwa setiap bisnis memiliki kebutuhan yang berbeda. Oleh karena itu, kami menawarkan berbagai jenis website, mulai dari website bisnis, toko online, landing page, portofolio, hingga website perusahaan. Semua website yang kami buat responsif, artinya bisa diakses dengan baik di berbagai perangkat seperti HP, tablet, dan laptop. Selain itu, kami juga memastikan setiap website sudah SEO-friendly, sehingga lebih mudah ditemukan di Google dan mendatangkan lebih banyak pelanggan potensial.</p>
 
-                <button class="flex items-center">
-                      <a class=" font-raleway font-sembold text-[16px] lg:text-[20px] text-black dark:text-white underline" href="">Cek Media Sosial Kami</a>
-                      <span class="material-symbols-outlined no-underline text-black dark:text-white">
+                <button  data-aos="fade-up" data-aos-duration="2500" class="flex items-center justify-start gap-2 text-black hover:text-supportBlue dark:text-white dark:hover:text-supportPink ">
+                      <a class=" font-raleway font-medium text-[16px] lg:text-[20px] hover:underline dark:hover:underline" href="">Cek Media Sosial Kami</a>
+                      <span class="material-symbols-outlined no-underline">
                         arrow_forward
-                    </span>
+                        </span>
                 </button>
               
-            </div>
+            </article>
         </div>
      </div>
 
 
     <!-- fitur page -->
-    <div class="bg-pinkColor dark:bg-primaryBlue w-full min-h-[100svh]">
-        <div class="container 
-        mx-auto min-h-[100svh] bg-pinkColor dark:bg-primaryBlue h-full px-5 py-20 
-        flex justify-center items-center">
+    <div class="bg-white dark:bg-primaryBlue w-full min-h-[100svh]">
+        <div class="container mx-auto min-h-[100svh] bg-white dark:bg-primaryBlue h-full px-5 py-10 
+        flex flex-col justify-center items-center">
 
-        <div class="relative bg-transparent h-[500px] w-full overflow-hidden flex justify-center">
+        <div  class="relative bg-transparent h-[500px] w-full overflow-hidden flex justify-center">
             <span class="flex items-start">
-                <img class="animate-animationScrollDown absolute left-0 w-[50%] ml-16 skew-x-6 object-cover" src="assets/images/Template UMKM Website 1.png" alt="">
+                <img class="animate-animationScrollDown absolute left-0 w-[100%] md:w-[50%] ml-10 md:ml-16 md:skew-x-6 object-cover" src="assets/images/Template UMKM Website 1.png" alt="">
             </span>
-            <span class="flex items-end">
-                <img class="animate-animationScrollUp absolute right-0 w-[50%] skew-x-6 object-cover " src="assets/images/Template UMKM Website 2.png" alt="">
+            <span class=" items-end ">
+                <img class="animate-animationScrollUp absolute right-0 w-[100%] md:w-[50%] skew-x-6 object-cover " src="assets/images/Template UMKM Website 2.png" alt="">
             </span>
             
             
         </div>
-            
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-2 px-2 lg:px-14 py-10">
+            <section  data-aos="fade-down" data-aos-duration="2500" class="flex gap-3">
+                <div class="font-raleway font-semibold text-[42px] lg:text-[60px] -mt-3 text-black dark:text-white"><strong>1</strong></div>
+                <div>
+                    <h3 class="font-montserrat font-bold text-[20px] xl:text-[26px] text-black dark:text-white">Peningkatan Kepercayaan Pelanggan</h3>
+                    <p class="font-raleway text-black dark:text-white text-[16px] xl:text-[20px]">Website dengan testimoni dan ulasan pelanggan bisa meningkatkan kepercayaan orang untuk membeli.</p>
+                </div>
+            </section>
+            <section  data-aos="fade-up" data-aos-duration="2500" class="flex gap-3">
+                <div class="font-raleway font-semibold text-[42px] lg:text-[60px] -mt-3 text-black dark:text-white"><strong>2</strong></div>
+                <div>
+                    <h3 class="font-montserrat font-bold text-[20px] xl:text-[26px] text-black dark:text-white">Jangkauan Lebih Luas</h3>
+                    <p class="font-raleway text-black dark:text-white text-[16px] xl:text-[20px]">Dengan website, bisnis kamu bisa dikenal oleh lebih banyak orang, bahkan di luar kota atau negara.</p>
+                </div>
+            </section>
+            <section  data-aos="fade-down" data-aos-duration="2500" class="flex gap-3">
+                <div class="font-raleway font-semibold text-[42px] lg:text-[60px] -mt-3 text-black dark:text-white"><strong>3</strong></div>
+                <div>
+                    <h3 class="font-montserrat font-bold text-[20px] xl:text-[26px] text-black dark:text-white">Toko Online 24 Jam</h3>
+                    <p class="font-raleway text-black dark:text-white text-[16px] xl:text-[20px]">Pelanggan bisa melihat produk atau jasa kapan saja, bahkan saat kamu sedang tidur</p>
+                </div>
+            </section>
         </div>
-
      </div>
-     
+
+    <!-- Pricing page -->
+    <div class="bg-pinkColor dark:bg-secondBlue w-full min-h-[700px]">
+        <div class="container bg-pinkColor dark:bg-secondBlue max-w-[1100px] mx-auto min-h-[700px] flex items-center px-5 py-10">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <section  data-aos="fade-right" data-aos-duration="2500" class="flex flex-col gap-5 w-full lg:w-[40%] justify-center">
+                    <h2 class="font-montserrat font-bold text-black dark:text-white text-[42px] w-[300px] leading-[50px]">
+                        <span class="font-montserrat font-semibold text-black dark:text-white text-[20px]">HARGA</span><br>
+                        Jasa Pembuatan Website
+                    </h2>
+                    <p class="font-raleway text-black dark:text-white text-[16px] leading-6">
+                        Kami menawarkan dua pilihan kelas yang dirancang untuk memenuhi kebutuhan yang berbeda. <span class="font-extrabold">Kelas UMKM</span> cocok bagi pelaku usaha kecil dan menengah. Dan juga <span class="font-extrabold">Kelas Personal</span> dirancang bagi individu yang ingin meningkatkan keterampilan dan produktivitasnya.
+                    </p>
+                </section>
+                <section class="flex flex-col items-center md:flex-row gap-2">
+                    <!-- card UMKM -->
+                    <div  data-aos="fade-up" data-aos-duration="2500" class="p-[3px] bg-gradient-to-b from-supportPink to-slate-600 dark:to-gray-100 w-[300px] h-[470px] xl:h-[510px] rounded-[20px] ">
+                        <div class="bg-white dark:bg-secondBlue h-full w-full rounded-[20px] text-black dark:text-white pl-2 pr-4 py-3 flex flex-col gap-4 relative">
+
+                            <div class="flex items-center justify-start gap-2">
+                                <img src="assets/icon/People.svg" class="size-[30px]" loading="lazy">
+                                <h3 class="font-raleway font-medium text-[20px]">Kelas <span class="font-extrabold">UMKM</span></h3>
+                            </div>
+                            <div class="">
+                                <h4 class="font-montserrat font-bold text-[26px]">Rp150.000<span class="font-medium">/website</span></h4>
+                                <div class="flex gap-2">
+                                    <h5 class="font-montserrat font-semibold text-[20px] line-through">Rp800.000 </h5>
+                                    <h6 class="font-montserrat font-bold text-[20px] ">81%</h6>
+
+                                </div>
+                            </div>
+                            <!-- checklist -->
+                            <div class="flex flex-col gap-1">
+                                <div class="grid grid-cols-[10%_90%] place-items-start gap-1">
+                                    <img src="assets/icon/cek 1.svg" class="size-[30px]" alt="check produk kelas umkm genzite" loading="lazy">
+                                    <p class="font-raleway font-semibold text-[16px]">Meningkatkan kredibilitas usaha dan kepercayaan pelanggan</p>
+
+                                </div>
+                                <div class="grid grid-cols-[10%_90%] place-items-start gap-1">
+                                    <img src="assets/icon/cek 1.svg" class="size-[30px]" alt="check produk kelas umkm genzite" loading="lazy">
+                                    <p class="font-raleway font-semibold text-[16px]">menjangkau pasar secara luas dan dapat diakses diseluruh Indonesia</p>
+
+                                </div>
+                                <div class="grid grid-cols-[10%_90%] place-items-start gap-1">
+                                    <img src="assets/icon/cek 1.svg" class="size-[30px]" alt="check produk kelas umkm genzite" loading="lazy">
+                                    <p class="font-raleway font-semibold text-[16px]">dapat diintegrasikan dengan media sosial maupun toko online anda</p>
+                                </div>
+
+                                <button class="absolute flex items-center bottom-5 right-5 gap-2 text-black hover:text-supportBlue dark:text-white dark:hover:text-supportPink duration-200">
+                                    <a href="#" class="font-raleway font-semibold text-[16px]">Contact</a>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>                     
+                    
+                    <!-- card PERSONAL -->
+                    <div  data-aos="fade-down" data-aos-duration="2500" class="p-[3px] bg-gradient-to-b from-supportPink to-purplecolor w-[300px] h-[470px] xl:h-[510px] rounded-[20px] ">
+                        <div class="bg-white dark:bg-secondBlue h-full w-full rounded-[20px] text-black dark:text-white px-2 py-3 flex flex-col gap-4 relative">
+    
+                            <div class="flex items-center justify-start gap-2">
+                                <span class="flex">
+                                    <img src="assets/icon/Woman.svg" class="size-[30px] z-30 brightness-110" loading="lazy">
+                                    <img src="assets/icon/Man.svg" class="size-[30px] z-10 -ml-2 brightness-110" loading="lazy">
+                                </span>
+                                <h3 class="font-raleway font-medium text-[20px]">Kelas <span class="font-extrabold">Personal</span></h3>
+                            </div>
+                            <div class="">
+                                <h4 class="font-montserrat font-bold text-[26px]">Rp250.000<span class="font-medium">/website</span></h4>
+                                <div class="flex gap-2">
+                                    <h5 class="font-montserrat font-semibold text-[20px] line-through">Rp900.000 </h5>
+                                    <h6 class="font-montserrat font-bold text-[20px] ">72%</h6>
+    
+                                </div>
+                            </div>
+                            <!--checklist -->
+                            <div class="flex flex-col gap-1">
+                                <div class="grid grid-cols-[10%_90%] place-items-start gap-1">
+                                    <img src="assets/icon/cek 1.svg" class="size-[30px]" alt="check produk kelas umkm genzite" loading="lazy">
+                                    <p class="font-raleway font-semibold text-[16px]">Meningkatkan Kredibilitas dan Profesionalitas Personal branding anda</p>
+    
+                                </div>
+                                <div class="grid grid-cols-[10%_90%] place-items-start gap-1">
+                                    <img src="assets/icon/cek 1.svg" class="size-[30px]" alt="check produk kelas umkm genzite" loading="lazy">
+                                    <p class="font-raleway font-semibold text-[16px]">Menampilkan Portofolio dan Karya Pribadi secara online</p>
+    
+                                </div>
+                                <div class="grid grid-cols-[10%_90%] place-items-start gap-1">
+                                    <img src="assets/icon/cek 1.svg" class="size-[30px]" alt="check produk kelas umkm genzite" loading="lazy">
+                                    <p class="font-raleway font-semibold text-[16px]">Terintegrasi dengan Media Sosial, CV, dan Contact anda secara langsung</p>
+    
+                                </div>
+                                <div class="grid grid-cols-[10%_90%] place-items-start gap-1">
+                                    <img src="assets/icon/cek 1.svg" class="size-[30px]" alt="check produk kelas umkm genzite" loading="lazy">
+                                    <p class="font-raleway font-semibold text-[16px]">Investasi Jangka Panjang dan jenjang karier</p>
+    
+                                </div>
+                            </div>
+                            <button class="absolute flex items-center bottom-5 right-5 gap-2 text-black hover:text-supportBlue dark:text-white dark:hover:text-supportPink duration-200">
+                                <a href="#" class="font-raleway font-semibold text-[16px]">Contact</a>
+                                <span class="material-symbols-outlined">
+                                    chevron_right
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>                     
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- faq page -->
+    <div class="w-full min-h-[100svh] bg-white dark:bg-primaryBlue">
+        <div class="container mx-auto min-h-[100svh] px-5 py-14 flex flex-col items-center justify-center">
+        
+            <!-- Heading -->
+            <div  data-aos="fade-down" data-aos-duration="2500" class="my-10 text-center">
+                <h3 class="font-montserrat font-bold text-[26px] xl:text-[42px] text-black dark:text-white">FAQ & Bantuan</h3>
+                <h6 class="font-raleway font-semibold text-[10px] xl:text-[20px] text-black dark:text-white">Pertanyaan yang sering diajukan</h6>
+            </div>
+    
+            <!-- Dropdown FAQ -->
+            <div class="w-[90%] xl:w-[900px] space-y-2">
+            
+                <!-- Item 1 -->
+                <div  data-aos="fade-right" data-aos-duration="2500" class="border border-black dark:border-white rounded-lg bg-white dark:bg-secondBlue hover:bg-supportPink hover:dark:bg-blue duration-200 py-4 md:py-6 px-4">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center font-montserrat font-semibold text-[10px] md:text-[18px] 2xl:text-[20px] text-left text-black dark:text-white">
+                        Apa fungsi adanya website bagi usaha kita?
+                        <span class="material-symbols-rounded transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-700 dark:text-white font-montserrat font-light text-[10px] md:text-[16px] hidden">
+                        Dengan memiliki website, UMKM dapat membangun toko online sendiri yang terlihat profesional dan mudah diakses kapan saja. Website memberi kontrol penuh atas tampilan, informasi produk,  tanpa bergantung pada platform lain. Ini membantu meningkatkan kepercayaan pelanggan dan memperkuat citra bisnis secara menyeluruh di dunia digital.
+                    </div>
+                </div>
+        
+                <!-- Item 2 -->
+                <div  data-aos="fade-left" data-aos-duration="2500" class="border border-black dark:border-white rounded-lg bg-white dark:bg-secondBlue hover:bg-supportPink hover:dark:bg-blue duration-200 py-4 md:py-6 px-4">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center font-montserrat font-semibold text-[10px] md:text-[18px] 2xl:text-[20px] text-left text-black dark:text-white">
+                        Mengapa memilih jasa kami dalam usaha anda?
+                    <span class="material-symbols-rounded transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-700 dark:text-white font-montserrat font-light text-[10px] md:text-[16px] hidden">
+                        Kami hadir bukan sekadar sebagai penyedia jasa pembuatan website, tetapi sebagai mitra yang peduli terhadap pertumbuhan UMKM. Kami memahami tantangan usaha kecil dan ingin membantu Anda naik level dan berkembang melalui kehadiran digital yang profesional. Dengan desain yang disesuaikan, dan dukungan berkelanjutan, kami siap mendorong usaha Anda agar lebih dikenal, dipercaya, dan berkembang di era digital.
+                    </div>
+                </div>
+        
+                <!-- Item 3 -->
+                <div  data-aos="fade-right" data-aos-duration="2500" class="border border-black dark:border-white rounded-lg bg-white dark:bg-secondBlue hover:bg-supportPink hover:dark:bg-blue duration-200 py-4 md:py-6 px-4">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center font-montserrat font-semibold text-[10px] md:text-[18px] 2xl:text-[20px] text-left text-black dark:text-white">
+                        Apa benefit yang anda dapatkan?
+                    <span class="material-symbols-rounded transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-700 dark:text-white font-montserrat font-light text-[10px] md:text-[16px] hidden">
+                        Anda tidak hanya mendapatkan jasa pembuatan desain dan website yang terjangkau, tetapi juga pendampingan jangka panjang. Kami akan terus memantau performa website Anda, memberikan masukan strategis, dan membantu, perkembangan usaha.Kami ingin tumbuh bersama Anda, bukan sekadar sebagai penyedia jasa, tapi sebagai partner digital yang peduli terhadap kemajuan bisnis kecil dan menengah
+                    </div>
+                </div>
+                
+                <!-- Item 4 -->
+                <div  data-aos="fade-left" data-aos-duration="2500" class="border border-black dark:border-white rounded-lg bg-white dark:bg-secondBlue hover:bg-supportPink hover:dark:bg-blue duration-200 py-4 md:py-6 px-4">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center font-montserrat font-semibold text-[10px] md:text-[18px] 2xl:text-[20px] text-left text-black dark:text-white">
+                        Bagaimana cara pesan jasa design ini?
+                    <span class="material-symbols-rounded transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-700 dark:text-white font-montserrat font-light text-[10px] md:text-[16px] hidden">
+                        Cukup chat kami melalui WhatsApp, lalu kirimkan informasi tentang usaha Anda—seperti nama usaha, lokasi, produk, deskripsi, sejarah, dan info lainnya. Jika ada artikel, link media sosial, atau toko e-commerce (seperti Shopee atau Tokopedia), silakan kirim juga. Kami akan bantu menampilkan semuanya dengan profesional di website Anda.
+                    </div>
+                </div>
+                
+                <!-- Item 5 -->
+                <div  data-aos="fade-right" data-aos-duration="2500" class="border border-black dark:border-white rounded-lg bg-white dark:bg-secondBlue hover:bg-supportPink hover:dark:bg-blue duration-200 py-4 md:py-6 px-4">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center font-montserrat font-semibold text-[10px] md:text-[18px] 2xl:text-[20px] text-left text-black dark:text-white">
+                        Berapa lama waktu yang dibutuhkan dalam pembuatan website?
+                    <span class="material-symbols-rounded transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-700 dark:text-white font-montserrat font-light text-[10px] md:text-[16px] hidden">
+                        Estimasi waktu pembuatan website adalah sekitar 1 bulan. Namun, durasi ini bisa lebih cepat atau lebih lama tergantung pada tingkat kesulitan, jumlah halaman, fitur khusus yang diminta, serta kelengkapan data dari klien. Kami akan selalu memberi update setiap tahap pengerjaan agar Anda tetap terinformasi.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- call to pm page -->
+    <div class="w-full min-h-[600px] bg-white dark:bg-secondBlue">
+        <div class="container min-h-[600px] mx-auto flex items-center justify-center px-5 py-10">
+            <div class="flex flex-col items-start justify-center gap-16 w-full lg:w-[1100px] h-auto lg:min-h-[350px] bg-gradient-to-r from-pink-300 dark:from-purple-500 to-pink-600 dark:to-purple-900 text-white px-5 lg:px-20 py-10 rounded-xl relative">
+                <!-- icon tambahan -->
+                    <img src="assets/images/Question-mark.webp" class="cloudAnimationtb absolute top-0 right-0 md:right-5 -mt-20 w-[200px] h-[200px] z-0" loading="lazy" alt="">
+                    <img src="assets/icon/Technical Support.png" class="cloudAnimationbt absolute top-0 left-0 -mt-16 -ml-10 w-[100px] h-[100px] z-0" loading="lazy" alt="">
+                    <img src="assets/icon/Ask.png" class="cloudanimationx absolute bottom-0 -mb-5 -ml-5 left-0 w-[50px] h-[50px] z-0" loading="lazy" alt="">
+                <!-- / -->
+                <h4  data-aos="fade-down" data-aos-duration="2500" class="items-center font-raleway font-extrabold text-[26px] lg:text-[40px] leading-[30px] md:leading-[50px] md:w-[80%] lg:w-[700px] z-20">Masih bingung atau ada yang mau ditanyain? <span class="font-medium text-[16px] md:text-[26px] leading-[2px]">Hubungi dulu aja, nggak harus langsung fix kok. Santai aja</span><span class="material-symbols-outlined ml-2 w-[15px] h-[15px]">
+                    sentiment_satisfied
+                    </span></h4>
+
+                <div  data-aos="fade-up" data-aos-duration="2500" class="flex flex-col w-full md:flex-row gap-4">
+                    <button class="flex items-center bg-white hover:bg-green-400 text-black hover:text-white duration-300 py-2 lg:py-3 px-4 gap-2 rounded-[8px]">
+                        <img src="assets/icon/Whatsapp.webp" class="w-[15px] lg:w-[30px] h-[15px] lg:h-[30px]" loading="" alt="">
+                        <a href="" class="font-montserrat font-semibold text-[16px] lg:text-[20px]">Whatsapp</a>
+                    </button>
+                    <button class="flex items-center bg-white hover:bg-gradient-to-b from-indigo-500 to-pink-400 text-black hover:text-white duration-300 py-2 lg:py-3 px-4 gap-2 rounded-[8px]">
+                        <img src="assets/icon/Instagram.png" class="w-[15px] lg:w-[30px] h-[15px] lg:h-[30px]" loading="" alt="">
+                        <a href="" class="font-montserrat font-semibold text-[16px] lg:text-[20px]">Instagram</a>
+                    </button>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <!-- footer page -->
+    <div class="w-full h-[400px] bg-primaryBlue ">
+        <div class="container mx-auto py-16 px-8 flex flex-col md:flex-row justify-between gap-14">
+            <div class="">
+                <img src="assets/images/logoblue2-01edit 4.svg" class="w-52 h-52 -ml-10 -mt-10 " loading="lazy" alt="logo genzite">
+                <h6 class="font-montserrat font-bold text-white text-[26px] lg:text-[40px] -mt-10"><span class="text-purplecolor">g</span>enzite<span class="text-red-500">id</span></h6>
+            </div> 
+            <div class="flex flex-col md:flex-row gap-5 md:gap-32">
+                <nav class="flex flex-col">
+                    <h6 class="text-black dark:text-white text-[20px] md:text-[26px] font-montserrat font-bold">Menu</h6>
+                    <a class="font-montserrat font-semibold text-[16px] lg:text-[20px] text-black hover:text-supportBlue dark:text-slate-400 dark:hover:text-white duration-300 py-4" href="">Home</a>
+                    <a class="font-montserrat font-semibold text-[16px] lg:text-[20px] text-black hover:text-supportBlue dark:text-slate-400 dark:hover:text-white duration-300 py-4" href="">Tentang Kami</a>
+                    <a class="font-montserrat font-semibold text-[16px] lg:text-[20px] text-black hover:text-supportBlue dark:text-slate-400 dark:hover:text-white duration-300 py-4" href="">Fitur</a>
+                    <a class="font-montserrat font-semibold text-[16px] lg:text-[20px] text-black hover:text-supportBlue dark:text-slate-400 dark:hover:text-white duration-300 py-4" href="">Harga</a>
+                </nav>
+                <section class="flex flex-col">
+                    <h6 class="text-black dark:text-white text-[20px] md:text-[26px] font-montserrat font-bold">Kontak</h6>
+                    <a class="font-montserrat font-semibold text-[16px] lg:text-[20px] text-black hover:text-supportBlue dark:text-slate-400 dark:hover:text-white duration-300 py-4" href="">WhatsApp</a>
+                    <a class="font-montserrat font-semibold text-[16px] lg:text-[20px] text-black hover:text-supportBlue dark:text-slate-400 dark:hover:text-white duration-300 py-4" href="">Instagram</a>
+                    
+                </section>
+            </div>         
+        </div>
+    </div>
+
+    <!-- copyright -->
+     <div class="w-full h-[80px] flex items-center justify-center bg-black text-slate-200 font-montserrat font-medium text-[10px] md:text-[16px]">
+        <p">&copy; 2025 - 2026 <span>g</span>enzite<span>id</span></p>
+     </div>
 </body>
 </html>

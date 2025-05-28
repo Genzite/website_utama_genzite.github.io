@@ -16,6 +16,7 @@ module.exports = {
         secondBlue: '#161179',
         blue: '#261FB3',
         pinkColor: '#FBE4D6',
+        purplecolor: '#617FEB',
         supportBlue: '#7182ED',
         supportPink: '#F598FE',
       },
