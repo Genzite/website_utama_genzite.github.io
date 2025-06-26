@@ -25,29 +25,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-white dark:bg-primaryBlue">
     <script src="dist/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <!--Navigasi bar-->
-    <header class="w-full h-[80px] fixed bg-pinkColor/90 dark:bg-primaryBlue/50 backdrop-blur-md flex z-40">
+    <header class="w-full h-[80px] fixed bg-pinkColor/90 dark:bg-primaryBlue/50 backdrop-blur-md flex shadow-[0_20px_30px_rgba(251,228,214,0.9)] dark:shadow-[0_20px_30px_rgba(12,9,80,0.9)] z-40">
         <nav class="container mx-auto h-[80px] bg-transparent flex items-center justify-between px-5">
             <a href="index.html" class="flex items-center gap-1"  aria-label="Kembali ke Beranda Genzite ID">
-                <img src="./assets/images/logogenzite.svg" class="w-[30px] h-[60px] mb-1" loading="lazy" alt="logo genziteid">
+                <img src="../assets/images/logogenzite.svg" class="w-[30px] h-[60px] mb-1" loading="lazy" alt="logo genziteid">
                 <h1 class="text-black dark:text-white font-montserrat font-semibold text-[26px]">GENZITE<span class="text-red-500 text-[26px]">ID</span></h1>
             </a>
-            <div class="flex items-center hidden lg:block">
-                <a href="#homepage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Beranda</a>
-                <a href="#tentangkamipage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Tetang Kami</a>
-                <a href="#fiturpage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Fitur</a>
-                <a href="#hargapage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Harga</a>
-                
-                <a href="#kontakpage" class="font-raleway font-semibold p-3 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-dark dark:text-white text-[20px transition-all duration-200" >Kontak</a>
+
+            <div class="flex items-center justify-center gap-5">
+                <div class="hidden lg:block">
+                    <a href="../index.html" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Beranda</a>
+                    <a href="./article/artikel-dan-project.html" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Artikel</a>
+                    
+                    
+                    <a href="../index.html#kontakpage" class="font-raleway font-semibold p-3 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-dark dark:text-white text-[18px] transition-all duration-200" >Kontak</a>
+                    
+                </div>
+               
+
             </div>
+  
             
-            <button id="hamburger" onclick="toggleHamburger()" class="block lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
+            <button id="hamburger" onclick="toggleHamburger()" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
                 <span class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
                 <span class="block h-0.5 w-6 dark:bg-white bg-black transition-opacity duration-300 group-[.open]:opacity-0"></span>
                 <span class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
@@ -56,13 +64,13 @@
             
         </nav> 
             <div id="sidebar" class="fixed z-40 top-0 left-0 h-[100vh] w-72 bg-pinkColor backdrop-blur-lg dark:backdrop-blur-lg dark:bg-primaryBlue transform -translate-x-full lg:-translate-x-full transition-transform duration-500 mt-[80px] flex flex-col p-5 ">
-                <a href="#homepage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Beranda</a>
-                <a href="#tentangkamipage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Tentang Kami</a>
-                <a href="#fiturpage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Fitur</a>
-                <a href="#hargapage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Harga</a>
-                <a href="#kontakpage" class="font-raleway font-semibold py-5 px-5 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-black dark:text-white text-[20px]">Kontak</a>      
+                <a href="../index.html" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Beranda</a>
+                <a href="./article/artikel-dan-project.html" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Artikel</a>
+                
+                <a href="../index.html#kontakpage" class="font-raleway font-semibold py-5 px-5 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-black dark:text-white text-[20px]">Kontak</a>      
             </div>
     </header>
+    
     <!-- homepage -->
     <div id="homepage" class="w-full min-h-[100svh] bg-white dark:bg-primaryBlue">
         <div class="container mx-auto min-h-[100svh] bg-white dark:bg-primaryBlue flex flex-col items-center justify-center px-5 py-24 relative">   
@@ -75,7 +83,7 @@
                 <div class="cloudAnimationbt absolute right-24 md:right-[160px] lg:right-[250px] xl:right-[310px] bottom-16 md:top-[260px] lg:top-[230px] xl:top-[300px] 2xl:top-[45vh] w-[100px] xl:w-[200px] h-[108px] xl:h-[215px] bg-supportBlue blur-[20px] xl:blur-[40px] rounded-full animate-float z-10"></div>
                 <div class="cloudAnimationtb absolute right-0 md:right-[60px] lg:right-[150px] xl:right-[130px] bottom-0 md:top-[140px] lg:top-[140px] xl:top-[100px] 2xl:top-[30vh] w-[145px] xl:w-[290px] h-[150px] xl:h-[300px] bg-supportPink blur-[20px] xl:blur-[40px] rounded-full animate-float-slow z-10"></div>
                 
-            <div  data-aos="fade-down" data-aos-duration="2500" class="flex items-center justify-start z-30 gap-3 mb-5">
+            <div data-aos="fade-down" data-aos-duration="2500" class="flex items-center justify-start z-30 gap-3 mb-5">
                 <span class="font-montserrat font-bold text-[16px] text-black dark:text-white">Dark</span>
                 <div class="relative w-[70px] h-[30px]">
                     <input type="checkbox" onclick="toggleDarkMode()" id="themebutton" class="sr-only peer">
@@ -121,12 +129,12 @@
         <div class="container mx-auto min-h-[100svh] bg-pinkColor dark:bg-secondBlue px-5 py-24 flex justify-center items-center">
             <article class="w-[1100px] lg:max-w-[800px] xl:max-w-[1100px] flex flex-col gap-[35px]">
                 <h1 class="font-montserrat font-semibold text-[26px] md:text-[42px] text-black dark:text-white" data-aos="fade-right">TENTANG KAMI</h1>
-                <p class="font-raleway font-medium text-[16px] lg:text-[20px] text-black dark:text-white" data-aos="fade-up">Di era digital saat ini, memiliki website bukan lagi sekadar pilihan, tetapi sudah menjadi kebutuhan bagi bisnis yang ingin berkembang dan menjangkau lebih banyak pelanggan. Kami hadir sebagai solusi, bagi kamu yang ingin memiliki website profesional tanpa harus ribet dengan hal teknis. Dengan pengalaman dalam pembuatan website untuk berbagai jenis usaha, kami siap membantu menciptakan website yang tidak hanya menarik secara visual, tetapi juga mudah digunakan dan dioptimalkan agar bisnis kamu semakin berkembang.</p>
+                <p class="font-raleway font-medium text-[16px] text-black dark:text-white" data-aos="fade-up">Di era digital saat ini, memiliki website bukan lagi sekadar pilihan, tetapi sudah menjadi kebutuhan bagi bisnis yang ingin berkembang dan menjangkau lebih banyak pelanggan. Kami hadir sebagai solusi, bagi kamu yang ingin memiliki website profesional tanpa harus ribet dengan hal teknis. Dengan pengalaman dalam pembuatan website untuk berbagai jenis usaha, kami siap membantu menciptakan website yang tidak hanya menarik secara visual, tetapi juga mudah digunakan dan dioptimalkan agar bisnis kamu semakin berkembang.</p>
 
-                <p class="font-raleway font-medium text-[16px] lg:text-[20px] text-black dark:text-white" data-aos="fade-up">Kami memahami bahwa setiap bisnis memiliki kebutuhan yang berbeda. Oleh karena itu, kami menawarkan berbagai jenis website, mulai dari website bisnis, toko online, landing page, portofolio, hingga website perusahaan. Semua website yang kami buat responsif, artinya bisa diakses dengan baik di berbagai perangkat seperti HP, tablet, dan laptop. Selain itu, kami juga memastikan setiap website sudah SEO-friendly, sehingga lebih mudah ditemukan di Google dan mendatangkan lebih banyak pelanggan potensial.</p>
+                <p class="font-raleway font-medium text-[16px] text-black dark:text-white" data-aos="fade-up">Kami memahami bahwa setiap bisnis memiliki kebutuhan yang berbeda. Oleh karena itu, kami menawarkan berbagai jenis website, mulai dari website bisnis, toko online, landing page, portofolio, hingga website perusahaan. Semua website yang kami buat responsif, artinya bisa diakses dengan baik di berbagai perangkat seperti HP, tablet, dan laptop. Selain itu, kami juga memastikan setiap website sudah SEO-friendly, sehingga lebih mudah ditemukan di Google dan mendatangkan lebih banyak pelanggan potensial.</p>
 
                 <button data-aos="fade-up" data-aos-duration="2500" class="flex items-center justify-start gap-2 text-black hover:text-supportBlue dark:text-white dark:hover:text-supportPink ">
-                      <a target="_blank" class="font-raleway font-medium text-[16px] lg:text-[20px] hover:underline dark:hover:underline" href="https://www.instagram.com/genzite.id?igsh=bG9sb294bDlvM2xi">Cek Media Sosial Kami</a>
+                      <a target="_blank" class="font-raleway font-medium text-[18px] hover:underline dark:hover:underline" href="https://www.instagram.com/genzite.id?igsh=bG9sb294bDlvM2xi">Cek Media Sosial Kami</a>
                       <span class="material-symbols-outlined no-underline">
                         arrow_forward
                         </span>
@@ -395,8 +403,8 @@
         </div>
     </div>
 
-    <!-- call to pm page -->
-    <div id="kontakpage" class="w-full min-h-[600px] lg:scroll-mt-60 bg-white dark:bg-secondBlue">
+    <!-- contact me / call to pm page -->
+    <div id="kontakpage" class="w-full min-h-[600px] scroll-m-5 bg-white dark:bg-secondBlue">
         <div class="container min-h-[600px] mx-auto flex items-center justify-center px-5 py-10">
         <section 
             aria-label="Contact Support" 
@@ -434,35 +442,59 @@
     </div>
     
     <!-- footer page -->
-    <footer class="w-full h-auto md:h-[400px] bg-pinkColor dark:bg-primaryBlue" role="contentinfo">
-        <div class="container mx-auto py-16 px-8 flex flex-col md:flex-row justify-between gap-14">
+    <footer class="w-full h-auto md:h-[400px] bg-gradient-to-b from-white dark:from-primaryBlue to-supportPink dark:to-supportBlue dark:bg-primaryBlue z-40" role="contentinfo">
+        <div class="max-w-screen-xl mx-auto py-16 px-5 flex flex-col md:flex-row justify-between gap-14 z-40">
         <div>
-            <img src="assets/images/logogenzite.svg" class="w-52 h-52 -ml-10 -mt-10" loading="lazy" alt="Logo Genzite">
-            <h2 class="font-montserrat font-bold text-black dark:text-white text-[26px] lg:text-[40px] -mt-10">
+            <img src="../assets/images/logogenzite.svg" class="w-52 h-52 -ml-10 -mt-10" loading="lazy" alt="Logo Genzite">
+            <h4 class="font-montserrat font-bold text-black dark:text-white text-[26px] lg:text-[40px] -mt-10">
             <span class="text-purplecolor">g</span>enzite<span class="text-red-500">id</span>
+            </h4>
+            <h2 class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px] max-w-[400px]">
+                Genzite adalah jasa pembuat website untuk membantu UMKM dan pedangang kecil mempunyai website modern dan terjangkau    
             </h2>
         </div> 
-        <div class="flex flex-col md:flex-row gap-5 md:gap-32">
-            <nav aria-label="Footer Navigation Menu" class="flex flex-col">
-            <h3 class="text-black dark:text-white text-[20px] md:text-[26px] font-montserrat font-bold mb-4">Menu</h3>
-            <a class="font-montserrat font-semibold text-[16px] lg:text-[20px] text-black hover:text-supportBlue dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="#homepage">Home</a>
-            <a class="font-montserrat font-semibold text-[16px] lg:text-[20px] text-black hover:text-supportBlue dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="#tentangkamipage">Tentang Kami</a>
-            <a class="font-montserrat font-semibold text-[16px] lg:text-[20px] text-black hover:text-supportBlue dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="#fiturpage">Fitur</a>
-            <a class="font-montserrat font-semibold text-[16px] lg:text-[20px] text-black hover:text-supportBlue dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="#hargapage">Harga</a>
-            </nav>
-            <section aria-label="Contact information" class="flex flex-col">
-            <h3 class="text-black dark:text-white text-[20px] md:text-[26px] font-montserrat font-bold mb-4">Kontak</h3>
-            <a class="font-montserrat font-semibold text-[16px] lg:text-[20px] text-black hover:text-supportBlue dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="#kontakpage" aria-label="Chat via WhatsApp">WhatsApp</a>
-            <a class="font-montserrat font-semibold text-[16px] lg:text-[20px] text-black hover:text-supportBlue dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="#kontakpage" aria-label="Visit Instagram Profile">Instagram</a>
-            </section>
-        </div>         
+            <div class="flex flex-col md:flex-row gap-5 md:gap-20">
+                <nav aria-label="Footer Navigation Menu" class="flex flex-col p-4">
+                    <h3 class="text-black dark:text-white text-[20px] font-montserrat font-bold mb-4">Menu</h3>
+                    <a class="font-montserrat font-semibold hover:font-bold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="#homepage">Beranda</a>
+                    <a class="font-montserrat font-semibold hover:font-bold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="./article/artikel-dan-project.html">Artikel</a>
+                    <a class="font-montserrat font-semibold hover:font-bold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="#kontakpage">Kontak</a>
+                    
+                </nav>
+                
+                <section aria-label="Contact information" class="flex flex-col p-4">
+                    <h3 class="text-black dark:text-white text-[20px] font-montserrat font-bold mb-4">Kontak</h3>
+                    <span class="flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp dark:text-white"></i>
+                        <a class="font-montserrat font-semibold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="https://wa.me/+6287742217980" aria-label="Chat via WhatsApp">WhatsApp</a>
+                    </span>
+                    
+                    <span class="flex items-center gap-2">
+                        <i class="fa-brands fa-instagram dark:text-white"></i>
+                        <a class="font-montserrat font-semibold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="https://www.instagram.com/genzite.id?igsh=bG9sb294bDlvM2xi" aria-label="Visit Instagram Profile">Instagram</a>
+                    </span>
+                </section>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="bg-supportPink dark:bg-supportBlue w-full h-auto backdrop-blur-md z-50">
+            <div class="max-w-screen-xl mx-auto h-auto flex flex-col md:flex-row items-start md:items-center justify-between p-5 gap-5">
+                <p class="font-raleway font-semibold text-black dark:text-white text-[10px] md:text-[16px]">
+                    &copy; 2025–2026 <a class="text-supportBlue dark:text-supportPink" href="">GenziteID.</a> Dibuat dengan penuh ❤️ perhatian untuk bisnis lokal. 
+                </p>
+                <span class="flex font-montserrat font-semibold text-black dark:text-white text-[20px] gap-2">
+                    <a href="https://wa.me/+6287742217980">
+                        <i class="fa-brands fa-instagram dark:text-white"></i>
+                    </a>
+                    <a href="https://www.instagram.com/genzite.id?igsh=bG9sb294bDlvM2xi">
+                        <i class="fa-brands fa-whatsapp dark:text-white"></i>
+                    </a>
+                    
+                    
+                </span>
+            </div>
         </div>
     </footer>
-    
-    <!-- copyright -->
-    <div class="w-full h-[80px] flex items-center justify-center bg-pink-500 dark:bg-indigo-600 text-black dark:text-slate-200 font-montserrat font-medium text-[10px] md:text-[16px]">
-        <p>&copy; 2025 - 2026 <span>g</span>enzite<span>id</span></p>
-    </div>
   
 
     <script type="application/ld+json">

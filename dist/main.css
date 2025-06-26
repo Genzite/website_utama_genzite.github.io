@@ -76,15 +76,16 @@
 }
 
 ::-webkit-scrollbar-track{
-    background-color: black;
+    background-color: white;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(180deg, #7182ED, #F598FE); /* biru ke pink, dari atas ke bawah */
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background:  linear-gradient(180deg, #5c6cd0, #e67bed); /* versi lebih gelap saat hover */
   } 
+

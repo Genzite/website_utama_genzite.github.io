@@ -36,4 +36,30 @@ window.onload = () => {
     }
   }
 
+// button to top
+function setupBackToTopButton(buttonId = "myBtn") {
+  const mybutton = document.getElementById(buttonId);
+
+  // Tampilkan tombol saat scroll > 20px
+  window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  });
+
+  // Scroll ke atas saat tombol diklik
+  mybutton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Bisa diganti "auto" kalau ingin langsung
+    });
+  });
+}
+
+window.addEventListener("DOMContentLoaded", function() {
+  setupBackToTopButton();
+});
+
   

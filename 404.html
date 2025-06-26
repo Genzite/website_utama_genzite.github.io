@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,70 @@
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./dist/main.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="bg-secondBlue">
+<body class="bg-supportPink dark:bg-secondBlue">
+    <script src="dist/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
+    <!--Navigasi bar-->
+    <header class="w-full h-[80px] fixed bg-pinkColor/90 dark:bg-primaryBlue/50 backdrop-blur-md flex shadow-[0_20px_30px_rgba(251,228,214,0.9)] dark:shadow-[0_20px_30px_rgba(12,9,80,0.9)] z-40">
+        <nav class="container mx-auto h-[80px] bg-transparent flex items-center justify-between px-5">
+            <a href="index.html" class="flex items-center gap-1"  aria-label="Kembali ke Beranda Genzite ID">
+                <img src="../assets/images/logogenzite.svg" class="w-[30px] h-[60px] mb-1" loading="lazy" alt="logo genziteid">
+                <h1 class="text-black dark:text-white font-montserrat font-semibold text-[26px]">GENZITE<span class="text-red-500 text-[26px]">ID</span></h1>
+            </a>
+
+            <div class="flex items-center justify-center gap-5">
+                <div class=" hidden lg:block">
+                    <a href="#homepage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Beranda</a>
+                    <a href="./article/artikel-dan-project.html" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Artikel</a>
+                    <a href="#fiturpage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Fitur</a>
+                    
+                    <a href="#kontakpage" class="font-raleway font-semibold p-3 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-dark dark:text-white text-[18px] transition-all duration-200" >Kontak</a>
+                    
+                </div>
+               <!-- Tombol tema dengan ikon bulan -->
+                <button class="hidden lg:flex  items-center gap-3 ml-5">
+                    <i class="fa-solid fa-moon text-xl text-supportBlue dark:text-supportPink"></i>
+                    <div class="relative w-[70px] h-[30px]">
+                    <input type="checkbox" onclick="toggleDarkMode()" id="themebutton" class="sr-only peer">
+                    <label for="themebutton" class="bg-white peer-checked:bg-supportPink cursor-pointer absolute inset-0 rounded-full transition-colors duration-500"></label>
+                    <span class="w-[20px] h-[20px] bg-supportBlue absolute rounded-full left-1 top-1 peer-checked:bg-white peer-checked:left-10 transition-all duration-500 pointer-events-none"></span>
+                    </div>
+                    <i class="fa-solid fa-sun text-supportBlue dark:text-supportPink"></i>
+                </button>
+
+            </div>
+  
+            
+            <button id="hamburger" onclick="toggleHamburger()" class="block lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
+                <span class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
+                <span class="block h-0.5 w-6 dark:bg-white bg-black transition-opacity duration-300 group-[.open]:opacity-0"></span>
+                <span class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
+            </button>
+            
+            
+        </nav> 
+            <div id="sidebar" class="fixed z-40 top-0 left-0 h-[100vh] w-72 bg-pinkColor backdrop-blur-lg dark:backdrop-blur-lg dark:bg-primaryBlue transform -translate-x-full lg:-translate-x-full transition-transform duration-500 mt-[80px] flex flex-col p-5 ">
+                <a href="#homepage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Beranda</a>
+                <a href="#tentangkamipage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Artikel</a>
+                <div  data-aos="fade-down" data-aos-duration="2500" class="flex items-center justify-start z-30 gap-3 mb-5">
+                    <span class="font-montserrat font-bold text-[16px] text-black dark:text-white">Dark</span>
+                    <div class="relative w-[70px] h-[30px]">
+                        <input type="checkbox" onclick="toggleDarkMode()" id="themebutton" class="sr-only peer">
+                        <label for="themebutton" class="bg-white peer-checked:bg-supportPink cursor-pointer absolute inset-0 rounded-full transition-colors duration-500"></label>
+                        <span class="w-[20px] h-[20px] bg-supportBlue absolute rounded-full left-1 top-1 peer-checked:bg-white peer-checked:left-10 transition-all duration-500 pointer-events-none"></span>
+                    </div>
+                    <span class="font-montserrat font-bold text-[16px] text-black dark:text-white">Light</span>
+                </div>
+                
+                <a href="#kontakpage" class="font-raleway font-semibold py-5 px-5 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-black dark:text-white text-[20px]">Kontak</a>      
+            </div>
+    </header>
+
     <div class="container mx-auto min-h-[100vh] flex flex-col items-center justify-center relative">
        <!-- Logo -->
         <span class="flex justify-center items-center">
@@ -20,14 +81,13 @@
            <div class="bg-white w-[3px] h-10 rounded-lg"></div>
            <h3 class="font-montserrat font-semibold text-[16px] md:text-[26px] text-white ml-5"><span class="text-indigo-500">g</span>enzite.my.<span class="text-red-500">id</span></h3>
         </span>
-
-
+        
         <h2 class="text-white font-montserrat font-extrabold text-[100px] md:text-[150px] 2xl:text-[250px] -mt-10">40<span class="inline-block rotate-12">4</span>
         </h2>
-        <h4 class="text-white font-raleway font-semibold text-[16px] md:text-[26px] 2xl:text-[40px] -mt-5 md:-mt-8">Halaman Tidak Ditemukan!</h4>  
+        <h4 class="text-white font-raleway font-semibold text-[16px] md:text-[26px] -mt-5 md:-mt-8">Halaman Tidak Ditemukan!</h4>  
         
         <!-- button back -->
-        <a href="index.html" class="bg-white px-3 py-2 rounded-lg mt-8 font-montserrat font-semibold text-[10px] md:text-[16px] 2xl:text-[26px] hover:bg-indigo-600 hover:shadow-supportBlue shadow-lg duration-500 hover:text-white">Kembali</a>
+        <a href="index.html" class="bg-white px-3 py-2 rounded-lg mt-8 font-montserrat font-semibold text-[16px] hover:bg-indigo-600 hover:shadow-supportBlue shadow-lg duration-500 hover:text-white">Kembali</a>
     </div>
 </body>
 </html>
