@@ -7,14 +7,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/iconlogo/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
 
-    <link rel="stylesheet" href="./dist/output.css">
-    <link rel="stylesheet" href="./dist/main.css">
+    <link rel="stylesheet" href="/dist/main.css">
+    <link rel="stylesheet" href="/dist/output.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-supportPink dark:bg-secondBlue">
-    <script src="dist/main.js"></script>
+    <script src="/dist/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
 
@@ -28,53 +28,38 @@
 
             <div class="flex items-center justify-center gap-5">
                 <div class=" hidden lg:block">
-                    <a href="#homepage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Beranda</a>
-                    <a href="./article/artikel-dan-project.html" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Artikel</a>
-                    <a href="#fiturpage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Fitur</a>
+                    <a href="../index.html#homepage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Beranda</a>
+                    <a href="../index.html#tentangkamipage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Tentang Kami</a>
                     
-                    <a href="#kontakpage" class="font-raleway font-semibold p-3 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-dark dark:text-white text-[18px] transition-all duration-200" >Kontak</a>
                     
+                    <a href="../index.html#kontakpage" class="font-raleway font-semibold p-3 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-dark dark:text-white text-[18px] transition-all duration-200" >Kontak</a>
+                    
+                     <!--Tombol tema dengan ikon bulan-->
+                     <i onclick="toggleDarkMode()" class="fa-solid fa-moon text-supportPink dark:text-supportBlue text-[30px] p-3"></i>
                 </div>
-               <!-- Tombol tema dengan ikon bulan -->
-                <button class="hidden lg:flex  items-center gap-3 ml-5">
-                    <i class="fa-solid fa-moon text-xl text-supportBlue dark:text-supportPink"></i>
-                    <div class="relative w-[70px] h-[30px]">
-                    <input type="checkbox" onclick="toggleDarkMode()" id="themebutton" class="sr-only peer">
-                    <label for="themebutton" class="bg-white peer-checked:bg-supportPink cursor-pointer absolute inset-0 rounded-full transition-colors duration-500"></label>
-                    <span class="w-[20px] h-[20px] bg-supportBlue absolute rounded-full left-1 top-1 peer-checked:bg-white peer-checked:left-10 transition-all duration-500 pointer-events-none"></span>
-                    </div>
-                    <i class="fa-solid fa-sun text-supportBlue dark:text-supportPink"></i>
-                </button>
-
             </div>
   
             
-            <button id="hamburger" onclick="toggleHamburger()" class="block lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
-                <span class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
-                <span class="block h-0.5 w-6 dark:bg-white bg-black transition-opacity duration-300 group-[.open]:opacity-0"></span>
-                <span class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
-            </button>
+            <div class="flex flex-row-reverse gap-3 justify-center items-center lg:hidden">
+                <button id="hamburger" onclick="toggleHamburger()" class=" lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
+                    <span class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
+                    <span class="block h-0.5 w-6 dark:bg-white bg-black transition-opacity duration-300 group-[.open]:opacity-0"></span>
+                    <span class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
+                </button>
+                <!--Tombol tema dengan ikon bulan-->
+                <i onclick="toggleDarkMode()" class="fa-solid fa-moon text-supportPink dark:text-supportBlue text-[30px] hidden"></i>
+            </div>
             
             
         </nav> 
             <div id="sidebar" class="fixed z-40 top-0 left-0 h-[100vh] w-72 bg-pinkColor backdrop-blur-lg dark:backdrop-blur-lg dark:bg-primaryBlue transform -translate-x-full lg:-translate-x-full transition-transform duration-500 mt-[80px] flex flex-col p-5 ">
-                <a href="#homepage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Beranda</a>
-                <a href="#tentangkamipage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Artikel</a>
-                <div  data-aos="fade-down" data-aos-duration="2500" class="flex items-center justify-start z-30 gap-3 mb-5">
-                    <span class="font-montserrat font-bold text-[16px] text-black dark:text-white">Dark</span>
-                    <div class="relative w-[70px] h-[30px]">
-                        <input type="checkbox" onclick="toggleDarkMode()" id="themebutton" class="sr-only peer">
-                        <label for="themebutton" class="bg-white peer-checked:bg-supportPink cursor-pointer absolute inset-0 rounded-full transition-colors duration-500"></label>
-                        <span class="w-[20px] h-[20px] bg-supportBlue absolute rounded-full left-1 top-1 peer-checked:bg-white peer-checked:left-10 transition-all duration-500 pointer-events-none"></span>
-                    </div>
-                    <span class="font-montserrat font-bold text-[16px] text-black dark:text-white">Light</span>
-                </div>
-                
-                <a href="#kontakpage" class="font-raleway font-semibold py-5 px-5 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-black dark:text-white text-[20px]">Kontak</a>      
+                <a href="../index.html#homepage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Beranda</a>
+                <a href="../index.html#tentangkamipage" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Tentang Kami</a>
+                <a href="../index.html#kontakpage" class="font-raleway font-semibold py-5 px-5 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-black dark:text-white text-[18px]">Kontak</a>
             </div>
     </header>
 
-    <div class="container mx-auto min-h-[100vh] flex flex-col items-center justify-center relative">
+    <div data-aos="fade-down" data-aos-duration="2500" class="container mx-auto min-h-[100vh] flex flex-col items-center justify-center relative">
        <!-- Logo -->
         <span class="flex justify-center items-center">
            <img src="assets/images/logogenzite.svg" class="size-32" alt="">
