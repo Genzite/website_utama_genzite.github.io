@@ -1,362 +1,476 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cara Membuat website toko sederhana dan gratis dengan bantuan AI</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/iconlogo/favicon-16x16.png"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/iconlogo/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
 
 
-    <meta name="description" content="Cara membuat website toko sederhana secara gratis dengan bantuan AI. Panduan lengkap HTML, CSS, JS, dan Netlify.">
-    <meta name="keywords" content="website gratis, website toko, html css js, netlify, genzite, tutorial website, ai untuk website">
+    <meta name="description"
+        content="Cara membuat website toko sederhana secara gratis dengan bantuan AI. Panduan lengkap HTML, CSS, JS, dan Netlify.">
+    <meta name="keywords"
+        content="website gratis, website toko, html css js, netlify, genzite, tutorial website, ai untuk website">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Genzite ID">
-    <link rel="canonical" href="https://genzite.my.id/article/cara-membuat-website-toko-gratis-dengan-bantuan-openai.html" />
+    <link rel="canonical"
+        href="https://genzite.my.id/article/cara-membuat-website-toko-gratis-dengan-bantuan-openai.html" />
 
 
     <meta property="og:title" content="Cara Membuat Website Toko Gratis dengan Bantuan AI" />
-    <meta property="og:description" content="Panduan lengkap membuat website toko gratis menggunakan AI, HTML, CSS, JS, dan Netlify." />
-    <meta property="og:image" content="https://genzite.my.id/assets/images/Gambar%20yang%20di%20generate%20oleh%20ChatGPT%20Image%2020%20Jun%202025,%2010.22.07.png" />
-    <meta property="og:url" content="https://genzite.my.id/article/cara-membuat-website-toko-gratis-dengan-bantuan-openai.html" />
+    <meta property="og:description"
+        content="Panduan lengkap membuat website toko gratis menggunakan AI, HTML, CSS, JS, dan Netlify." />
+    <meta property="og:image"
+        content="https://genzite.my.id/assets/images/Gambar%20yang%20di%20generate%20oleh%20ChatGPT%20Image%2020%20Jun%202025,%2010.22.07.png" />
+    <meta property="og:url"
+        content="https://genzite.my.id/article/cara-membuat-website-toko-gratis-dengan-bantuan-openai.html" />
     <meta property="og:type" content="article" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Cara Membuat Website Toko Gratis dengan Bantuan AI" />
     <meta name="twitter:description" content="Tutorial membuat website gratis dengan AI dan hosting di Netlify." />
-    <meta name="twitter:image" content="https://genzite.my.id/assets/images/Gambar%20yang%20di%20generate%20oleh%20ChatGPT%20Image%2020%20Jun%202025,%2010.22.07.png" />
+    <meta name="twitter:image"
+        content="https://genzite.my.id/assets/images/Gambar%20yang%20di%20generate%20oleh%20ChatGPT%20Image%2020%20Jun%202025,%2010.22.07.png" />
 
 
     <link rel="stylesheet" href="../dist/main.css">
     <link rel="stylesheet" href="../dist/output.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=calendar_month" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=calendar_month" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body onload="setupBackToTopButton()" class="bg-white dark:bg-primaryBlue">
     <script src="../dist/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <!--Navigasi bar-->
-    <header class="w-full h-[80px] fixed bg-pinkColor/90 dark:bg-primaryBlue/50 backdrop-blur-md flex shadow-[0_20px_30px_rgba(251,228,214,0.9)] dark:shadow-[0_20px_30px_rgba(12,9,80,0.9)] z-40">
+    <header
+        class="w-full h-[80px] fixed bg-pinkColor/90 dark:bg-primaryBlue/50 backdrop-blur-md flex shadow-[0_20px_30px_rgba(251,228,214,0.9)] dark:shadow-[0_20px_30px_rgba(12,9,80,0.9)] z-40">
         <nav class="container mx-auto h-[80px] bg-transparent flex items-center justify-between px-5">
-            <a href="index.html" class="flex items-center gap-1"  aria-label="Kembali ke Beranda Genzite ID">
-                <img src="../assets/images/logogenzite.svg" class="w-[30px] h-[60px] mb-1" loading="lazy" alt="logo genziteid">
-                <h1 class="text-black dark:text-white font-montserrat font-semibold text-[26px]">GENZITE<span class="text-red-500 text-[26px]">ID</span></h1>
+            <a href="index.html" class="flex items-center gap-1" aria-label="Kembali ke Beranda Genzite ID">
+                <img src="../assets/images/logogenzite.svg" class="w-[30px] h-[60px] mb-1" loading="lazy"
+                    alt="logo genziteid">
+                <h1 class="text-black dark:text-white font-montserrat font-semibold text-[26px]">GENZITE<span
+                        class="text-red-500 text-[26px]">ID</span></h1>
             </a>
 
             <div class="flex items-center justify-center gap-5">
                 <div class="hidden lg:block">
-                    <a href="../index.html" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Beranda</a>
-                    <a href="artikel-dan-project.html" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Artikel</a>
-                    
-                    <a href="../index.html#kontakpage" class="font-raleway font-semibold p-3 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-dark dark:text-white text-[18px] transition-all duration-200" >Kontak</a>
-                    
-                 
-                </div>            
+                    <a href="../index.html"
+                        class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Beranda</a>
+                    <a href="artikel-dan-project.html"
+                        class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[18px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4 transition-all duration-100">Artikel</a>
+
+                    <a href="../index.html#kontakpage"
+                        class="font-raleway font-semibold p-3 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-dark dark:text-white text-[18px] transition-all duration-200">Kontak</a>
+
+
+                </div>
             </div>
-            <button id="hamburger" onclick="toggleHamburger()" class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
-                <span class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
-                <span class="block h-0.5 w-6 dark:bg-white bg-black transition-opacity duration-300 group-[.open]:opacity-0"></span>
-                <span class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
+            <button id="hamburger" onclick="toggleHamburger()"
+                class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1 group">
+                <span
+                    class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:rotate-45 group-[.open]:translate-y-1.5"></span>
+                <span
+                    class="block h-0.5 w-6 dark:bg-white bg-black transition-opacity duration-300 group-[.open]:opacity-0"></span>
+                <span
+                    class="block h-0.5 w-6 dark:bg-white bg-black transition-transform duration-300 origin-center group-[.open]:-rotate-45 group-[.open]:-translate-y-1.5"></span>
             </button>
-            
-            
-        </nav> 
-            <div id="sidebar" class="fixed z-40 top-0 left-0 h-[100vh] w-72 bg-pinkColor backdrop-blur-lg dark:backdrop-blur-lg dark:bg-primaryBlue transform -translate-x-full lg:-translate-x-full transition-transform duration-500 mt-[80px] flex flex-col p-5 ">
-                <a href="../index.html" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Beranda</a>
-                <a href="artikel-dan-project.html" class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Artikel</a>
-                
-                <a href="../index.html#kontakpage" class="font-raleway font-semibold py-5 px-5 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-black dark:text-white text-[20px]">Kontak</a>
-            </div>
+
+
+        </nav>
+        <div id="sidebar"
+            class="fixed z-40 top-0 left-0 h-[100vh] w-72 bg-pinkColor backdrop-blur-lg dark:backdrop-blur-lg dark:bg-primaryBlue transform -translate-x-full lg:-translate-x-full transition-transform duration-500 mt-[80px] flex flex-col p-5 ">
+            <a href="../index.html"
+                class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Beranda</a>
+            <a href="artikel-dan-project.html"
+                class="font-raleway font-semibold text-black hover:text-supportBlue dark:hover:text-supportPink dark:text-white text-[20px] p-5 hover:border-supportBlue dark:hover:border-supportPink hover:border-b-4">Artikel</a>
+
+            <a href="../index.html#kontakpage"
+                class="font-raleway font-semibold py-5 px-5 bg-white hover:bg-supportBlue dark:hover:bg-supportPink dark:bg-blue rounded-md text-black dark:text-white text-[20px]">Kontak</a>
+        </div>
     </header>
 
     <div class="z-20 w-full h-[80px] bg-pinkColor dark:bg-primaryBlue"></div>
- 
+
     <div class="h-auto w-full bg-white dark:bg-primaryBlue ">
 
         <!--Button back to top  -->
-        <button id="myBtn" class="fixed right-5 bottom-5 bg-pink-400 dark:bg-supportBlue w-auto rounded-full p-3 lg:p-5 h-auto z-20">
+        <button id="myBtn"
+            class="fixed right-5 bottom-5 bg-pink-400 dark:bg-supportBlue w-auto rounded-full p-3 lg:p-5 h-auto z-20">
             <i class="fa-solid fa-arrow-up text-[20px] text-white dark:text-white"></i>
         </button>
 
-        <div class=" max-w-screen-xl px-5 py-5 h-auto mx-auto grid grid-cols-1 lg:grid-cols-[70%_30%] gap-10 lg:gap-0">    
+        <div
+            class=" max-w-screen-xl px-5 py-5 h-auto mx-auto grid grid-cols-1 md:grid-cols-[80%] lg:grid-cols-[70%_30%] gap-10 lg:gap-0">
             <div class="bg-white dark:bg-primaryBlue py-5">
-                <img  data-aos="fade-up" data-aos-duration="2500" class="rounded-xl border-slate-400 border-2 w-full h-[250px] md:h-[400px] lg:h-[500px]"
-                src="../assets/images/Gambar yang di generate oleh ChatGPT Image 20 Jun 2025, 10.22.07.png" 
-                alt="Cara Membuat website toko sederhana dan gratis dengan bantuan ai">
-                   
-                    <div  data-aos="fade-up" data-aos-duration="2500" class="flex justify-between items-center py-3">
-                        <!-- Tombol tema dengan ikon bulan -->
-                        <button class="flex items-center gap-3">
-                            <i class="fa-solid fa-sun text-xl text-supportPink dark:text-supportBlue"></i>
-                            <div class="relative w-[45px] h-[20px]">
-                            <input type="checkbox" onclick="toggleDarkMode()" id="themebutton" class="sr-only peer">
-                            <label for="themebutton" class="bg-supportPink peer-checked:bg-supportBlue cursor-pointer absolute inset-0 rounded-full transition-colors duration-500"></label>
-                            <span class="w-[10px] h-[10px] bg-white absolute rounded-full left-1 top-1 peer-checked:bg-white peer-checked:left-[30px] transition-all duration-500 pointer-events-none"></span>
-                            </div>
-                            <i class="fa-solid fa-moon text-supportPink dark:text-supportBlue"></i>
-                        </button>
-                        
-                        <!-- writer -->
-                        <div class="flex items-center justify-center gap-1 text-[10px] lg:text-[16px]">
-                            <span class="material-symbols-outlined text-slate-500 dark:text-slate-300">
-                            calendar_month
-                            </span>
-                            <h6 class="text-black dark:text-white">created on june 20, 2025 by <a href="" class="text-supportBlue">Genzite</a></h6>
-                        </div>
-                        
-                    </div>
-                    
+                <img data-aos="fade-up" data-aos-duration="2500"
+                    class="rounded-xl border-slate-400 border-2 w-full h-[250px] md:h-[400px] lg:h-[500px]"
+                    src="../assets/images/Gambar yang di generate oleh ChatGPT Image 20 Jun 2025, 10.22.07.png"
+                    alt="Cara Membuat website toko sederhana dan gratis dengan bantuan ai">
 
-         
-        
-               
-                    <h1  data-aos="fade-up" data-aos-duration="2500" class="font-bold font-montserrat text-[26px] lg:text-[32px] xl:text-[42px] leading-8 md:leading-9 lg:leading-[49px] text-black dark:text-white"
-                    >Cara Membuat Website Toko Sederhana dan Gratis dengan Bantuan AI (HTML, CSS, JS + Netlify)</h1>
-                    
-                    
+                <div data-aos="fade-up" data-aos-duration="2500" class="flex justify-between items-center py-3">
+                    <!-- Tombol tema dengan ikon bulan -->
+                    <button class="flex items-center gap-3">
+                        <i class="fa-solid fa-sun text-xl text-supportPink dark:text-supportBlue"></i>
+                        <div class="relative w-[45px] h-[20px]">
+                            <input type="checkbox" onclick="toggleDarkMode()" id="themebutton" class="sr-only peer">
+                            <label for="themebutton"
+                                class="bg-supportPink peer-checked:bg-supportBlue cursor-pointer absolute inset-0 rounded-full transition-colors duration-500"></label>
+                            <span
+                                class="w-[10px] h-[10px] bg-white absolute rounded-full left-1 top-1 peer-checked:bg-white peer-checked:left-[30px] transition-all duration-500 pointer-events-none"></span>
+                        </div>
+                        <i class="fa-solid fa-moon text-supportPink dark:text-supportBlue"></i>
+                    </button>
+
+                    <!-- writer -->
+                    <div class="flex items-center justify-center gap-1 text-[10px] lg:text-[16px]">
+                        <span class="material-symbols-outlined text-slate-500 dark:text-slate-300">
+                            calendar_month
+                        </span>
+                        <h6 class="text-black dark:text-white">created on june 20, 2025 by <a href=""
+                                class="text-supportBlue">Genzite</a></h6>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <h1 data-aos="fade-up" data-aos-duration="2500"
+                    class="font-bold font-montserrat text-[26px] lg:text-[32px] xl:text-[42px] leading-8 md:leading-9 lg:leading-[49px] text-black dark:text-white">
+                    Cara Membuat Website Toko Sederhana dan Gratis dengan Bantuan AI (HTML, CSS, JS + Netlify)</h1>
+
+
 
                 <!-- Article -->
-                <article class="flex flex-col gap-3"  data-aos="fade-up" data-aos-duration="2500">
+                <article class="flex flex-col gap-3" data-aos="fade-up" data-aos-duration="2500">
                     <p class="flex font-montserrat font-medium text-black dark:text-white text-[16px] mt-3">
-                        Membuat website toko sederhana tidak harus mahal atau rumit. Dengan bantuan AI dan teknologi web seperti HTML, CSS, dan JavaScript, siapa pun bisa membangun toko online-nya sendiri tanpa harus jago ngoding. Lebih menarik lagi, website tersebut bisa di-deploy gratis di Netlify, sehingga dapat diakses dari mana saja.
-    
+                        Membuat website toko sederhana tidak harus mahal atau rumit. Dengan bantuan AI dan teknologi web
+                        seperti HTML, CSS, dan JavaScript, siapa pun bisa membangun toko online-nya sendiri tanpa harus
+                        jago ngoding. Lebih menarik lagi, website tersebut bisa di-deploy gratis di Netlify, sehingga
+                        dapat diakses dari mana saja.
+
                     </p>
                     <ul class="list-disc list-inside text-[16px] text-black dark:text-white">
                         <li class="">Bagaimana membuat struktur website toko dengan HTML, CSS, dan JS</li>
                         <li class="">Bagaimana menggunakan AI untuk mempercepat proses desain dan penulisan konten</li>
                         <li class="">Bagaimana meng-upload website Anda ke Netlify agar bisa diakses publik</li>
-                        
+
                     </ul>
 
 
-                    <h2 class="flex items-center font-bold font-montserrat text-[32px] leading-9 md:leading-9 text-black dark:text-white mt-14">
-                         1. Tools yang Perlu Disiapkan Sebelum Membuat Website Toko 🧰
+                    <h2
+                        class="flex items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9 text-black dark:text-white mt-14">
+                        1. Tools yang Perlu Disiapkan Sebelum Membuat Website Toko 🧰
                     </h2>
-                    
-                        <h3 class="flex items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9  text-black dark:text-white mt-5">
-                            1.1 💻 Device Desktop / Laptop
-                        </h3>
-                        <p class="flex font-montserrat font-medium text-black dark:text-white text-[16px]">
-                        Dengan membangun website di perangkat laptop/desktop kita lebih nyaman dikarenakan anda membutuhkan layar besar dan akses ke file sistem seperti text editor, Ponsel tidak direkomendasikan karena keterbatasan pengelolaan file dan editor.
-                        </p>
-                        
-                        <h3 class="flex items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9  text-black dark:text-white mt-5">
-                            1.2 📝 Visual Studio Code (Text Editor)
-                        </h3>
-                        <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px] ">
-                        Kami merekomendasikan anda untuk menggunakan software Visual Studio Code dikarenakann software yang stabil, modern, dan umum digunakan oleh developer untuk menggembangkan software. Selain itu VScode memberikan kenyamanan seperti ekstensi yang bervariasi, pengguna bebas berekspresi seperti memasang AI, live server, dan juga anda bisa merubah tema Visual Studio Code.
-                            <br><br>
-                            <span>
-                                Installation : 
-                            <a class="font-montserrat font-medium text-supportBlue hover:underline text-[16px]" href="https://code.visualstudio.com/download">Install Visual Studio Code</a>
-                            </span>
-                        </p>
 
-                        <h3 class="flex items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9  text-black dark:text-white mt-5">
-                            1.3 🌐 Browser Modern
-                        </h3>
-                        <p class="flex font-montserrat font-medium text-black dark:text-white text-[16px]">
-                            Semua pasti sudah ada browser bawaan kan?. Nah, browser ini digunakan untuk melihat tampilan dari website yang kita kembangkan dengan text editor tadi dan minta jalankan di browser yang anda punya seperti Chrome, Microsoft Edge, dan lainnya.
-                        </p>
+                    <h3
+                        class="flex items-center font-bold font-montserrat text-[20px] leading-9 md:leading-9  text-black dark:text-white mt-5">
+                        1.1 💻 Device Desktop / Laptop
+                    </h3>
+                    <p class="flex font-montserrat font-medium text-black dark:text-white text-[16px]">
+                        Dengan membangun website di perangkat laptop/desktop kita lebih nyaman dikarenakan anda
+                        membutuhkan layar besar dan akses ke file sistem seperti text editor, Ponsel tidak
+                        direkomendasikan karena keterbatasan pengelolaan file dan editor.
+                    </p>
 
-                        <h3 class="flex items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9  text-black dark:text-white mt-5">
-                            1.4 🤖 Akun AI (ChatGPT atau lainnya)
-                        </h3>
-                        <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
-                            Ini adalah bagian terpenting yaitu mempunyai akun AI, untuk rekomendasi kami sendiri bebas anda dapat memilih AI kesukaan anda tetapi kali ini saya sedang menggunakan AI dari OpenAi yaitu chatGPT. Dan jangan lupa untuk login dengan akun yang kamu punya agar histori pencarian kamu tidak langsung hilang dikarenakan tidak login terlebih dahulu.
-                            <br><br>
-                            <span class="">
-                                Installation : 
-                            <a class="font-montserrat font-medium text-supportBlue hover:underline text-[16px]" href="https://chatgpt.com/auth/signup">Register akun ChatGPT/OpenAI</a>
-    
-                            </span>
-                        </p>
-                        
-                        <h3 class="flex  items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9  text-black dark:text-white mt mt-5">
-                            1.5 💻 ☁️ Akun Netlify
-                        </h3>
-                        <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
-                            Untuk mengonlinekan website, kamu perlu mempunyai akun Netlify agar website mu bisa dihosting disana dan mengudara. Kami merekomendasikan Netlify dikarenakan mudah menurut kami untuk pemula mengonlinekan website, dengan tampilan yang modern dan mudah dimengerti.
-                            <br><br>
-                            <span>
-                                Installation : 
-                                <a class="font-montserrat font-medium text-supportBlue hover:underline text-[16px]" href="https://app.netlify.com/signup">Register akun Netlify</a>
-                                
-                            </span>
-                        </p>
-                        
+                    <h3
+                        class="flex items-center font-bold font-montserrat text-[20px] leading-9 md:leading-9  text-black dark:text-white mt-5">
+                        1.2 📝 Visual Studio Code (Text Editor)
+                    </h3>
+                    <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px] ">
+                        Kami merekomendasikan anda untuk menggunakan software Visual Studio Code dikarenakann software
+                        yang stabil, modern, dan umum digunakan oleh developer untuk menggembangkan software. Selain itu
+                        VScode memberikan kenyamanan seperti ekstensi yang bervariasi, pengguna bebas berekspresi
+                        seperti memasang AI, live server, dan juga anda bisa merubah tema Visual Studio Code.
+                        <br><br>
+                        <span>
+                            Installation :
+                            <a class="font-montserrat font-medium text-supportBlue hover:underline text-[16px]"
+                                href="https://code.visualstudio.com/download">Install Visual Studio Code</a>
+                        </span>
+                    </p>
+
+                    <h3
+                        class="flex items-center font-bold font-montserrat text-[20px] leading-9 md:leading-9  text-black dark:text-white mt-5">
+                        1.3 🌐 Browser Modern
+                    </h3>
+                    <p class="flex font-montserrat font-medium text-black dark:text-white text-[16px]">
+                        Semua pasti sudah ada browser bawaan kan?. Nah, browser ini digunakan untuk melihat tampilan
+                        dari website yang kita kembangkan dengan text editor tadi dan minta jalankan di browser yang
+                        anda punya seperti Chrome, Microsoft Edge, dan lainnya.
+                    </p>
+
+                    <h3
+                        class="flex items-center font-bold font-montserrat text-[20px] leading-9 md:leading-9  text-black dark:text-white mt-5">
+                        1.4 🤖 Akun AI (ChatGPT atau lainnya)
+                    </h3>
+                    <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
+                        Ini adalah bagian terpenting yaitu mempunyai akun AI, untuk rekomendasi kami sendiri bebas anda
+                        dapat memilih AI kesukaan anda tetapi kali ini saya sedang menggunakan AI dari OpenAi yaitu
+                        chatGPT. Dan jangan lupa untuk login dengan akun yang kamu punya agar histori pencarian kamu
+                        tidak langsung hilang dikarenakan tidak login terlebih dahulu.
+                        <br><br>
+                        <span class="">
+                            Installation :
+                            <a class="font-montserrat font-medium text-supportBlue hover:underline text-[16px]"
+                                href="https://chatgpt.com/auth/signup">Register akun ChatGPT/OpenAI</a>
+
+                        </span>
+                    </p>
+
+                    <h3
+                        class="flex  items-center font-bold font-montserrat text-[20px] leading-9 md:leading-9  text-black dark:text-white mt mt-5">
+                        1.5 💻 ☁️ Akun Netlify
+                    </h3>
+                    <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
+                        Untuk mengonlinekan website, kamu perlu mempunyai akun Netlify agar website mu bisa dihosting
+                        disana dan mengudara. Kami merekomendasikan Netlify dikarenakan mudah menurut kami untuk pemula
+                        mengonlinekan website, dengan tampilan yang modern dan mudah dimengerti.
+                        <br><br>
+                        <span>
+                            Installation :
+                            <a class="font-montserrat font-medium text-supportBlue hover:underline text-[16px]"
+                                href="https://app.netlify.com/signup">Register akun Netlify</a>
+
+                        </span>
+                    </p>
+
                     <!-- Bagian siapkan kode editor -->
-                    <h2 class="flex items-center font-bold font-montserrat text-[32px] leading-9 md:leading-9 text-black dark:text-white mt-14">
-                            2. Buat folder baru dan mulai siapkan kode editor 
+                    <h2
+                        class="flex items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9 text-black dark:text-white mt-14">
+                        2. Buat folder baru dan mulai siapkan kode editor
                     </h2>
 
-                        <h3 class="flexitems-center font-bold font-montserrat text-[26px] leading-9 md:leading-9  text-black dark:text-white">
-                            ✅ 1. Buat Folder Proyek
+                    <h3
+                        class="flexitems-center font-bold font-montserrat text-[20px] leading-9 md:leading-9  text-black dark:text-white">
+                        ✅ 1. Buat Folder Proyek
 
-                        </h3>
-                        <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
-                            Buka File Explorer di komputermu.
-                            
-                            Buat folder baru, misalnya:
-                            <br>
-                            <span class="font-semibold italic py-2">toko-sederhana</span>
+                    </h3>
+                    <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
+                        Buka File Explorer di komputermu.
 
-                            Di dalam folder ini nanti kita akan menyimpan semua file HTML, CSS, JS, dan aset gambar/logo.
-                            
-                        </p>
+                        Buat folder baru, misalnya:
+                        <br>
+                        <span class="font-semibold italic py-2">toko-sederhana</span>
 
-                        <h3 class="flex items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9  text-black dark:text-white">
-                            ✅ 2. Buka Folder di Visual Studio Code
-                        </h3>
-                        <ul class="list-decimal list-inside text-black dark:text-white text-[16px] font-montserrat">
-                            <li class="">Buka aplikasi <span class="font-bold italic">Visual Studio Code</span></li>
-                            <li class="">Kik menu button <span class="font-bold italic">Open Folder</span></li>
-                            <li>Pilih folder yang anda buat tadi </li>
-                            <li>Lalu klik <span class="font-bold italic">Select Folder</span></li>
-                        </ul>
-                        <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
-                            berikut adalah cara membuka folder di text editor, dan kamu bisa mulai membuat codenya disana
-                            <br><br>
-                            <span class="px-1 break-words">
-                                Tutorial youtube : 
-                                <a class="font-montserrat font-medium text-supportBlue hover:underline text-[16px]" href="https://www.youtube.com/results?search_query=cara+membuka+folder+dari+visual+studio+code">Cara membuka folder dari visual studio code</a>
-                            </span>
-                        </p>                 
-                        <h3 class="flex  items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9  text-black dark:text-white">
-                            ✅ 3. Pasang Ekstensi VS Code yang Diperlukan (Opsional)
-                        </h3>
-                        <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
-                            Selanjutnya kamu boleh melewati atau mengikuti poin ketiga ini agar membantu pengembangan websitemu, kamu membutuhkan ekstensi <span class="font-bold italic">Live Server</span>
-                            Cara memasang ekstensi :
-                        </p>
-                        <ul class="list-decimal list-inside text-black dark:text-white text-[16px] font-montserrat">
-                            <li class="">klik ikon ekstensi di sidebar kiri <span class="font-bold italic">Visual Studio Code</span>, biasanya diatas icon botton search</li>
-                            <li class="">Kik search dan cari <span class="font-bold italic">Live Server</span></li>
-                            <li>Install ekstensi tersebut</li>
-                            <li>run ekstensi itu dibawah pojok kanan dengan botton <span class="font-bold italic">Go Live</span></li>
-                        </ul>
-                        <h3 class="flex items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9  text-black dark:text-white">
-                            ✅ 4. Buat Struktur File Dasar
-                        </h3>
-                        <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
-                            anda dapat membuat file baru dengan nama<span class="font-bold italic">index.html</span>
-                            
-                            <span class="break-words">
-                                Tutorial cara membuat file di Visual Studio Code : 
-                                <a class="font-montserrat font-medium text-supportBlue hover:underline text-[16px]" href="https://www.youtube.com/results?search_query=cara+membuat+file+html%2C+css%2C+js+di+visual+studio+code+">cara membuat file html, css, js di visual studio code </a>
-                            </span>
-                        </p>
+                        Di dalam folder ini nanti kita akan menyimpan semua file HTML, CSS, JS, dan aset gambar/logo.
+
+                    </p>
+
+                    <h3
+                        class="flex items-center font-bold font-montserrat text-[20px] leading-9 md:leading-9  text-black dark:text-white">
+                        ✅ 2. Buka Folder di Visual Studio Code
+                    </h3>
+                    <ul class="list-decimal list-inside text-black dark:text-white text-[16px] font-montserrat">
+                        <li class="">Buka aplikasi <span class="font-bold italic">Visual Studio Code</span></li>
+                        <li class="">Kik menu button <span class="font-bold italic">Open Folder</span></li>
+                        <li>Pilih folder yang anda buat tadi </li>
+                        <li>Lalu klik <span class="font-bold italic">Select Folder</span></li>
+                    </ul>
+                    <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
+                        berikut adalah cara membuka folder di text editor, dan kamu bisa mulai membuat codenya disana
+                        <br><br>
+                        <span class="px-1 break-words">
+                            Tutorial youtube :
+                            <a class="font-montserrat font-medium text-supportBlue hover:underline text-[16px]"
+                                href="https://www.youtube.com/results?search_query=cara+membuka+folder+dari+visual+studio+code">Cara
+                                membuka folder dari visual studio code</a>
+                        </span>
+                    </p>
+                    <h3
+                        class="flex  items-center font-bold font-montserrat text-[20px] leading-9 md:leading-9  text-black dark:text-white">
+                        ✅ 3. Pasang Ekstensi VS Code yang Diperlukan (Opsional)
+                    </h3>
+                    <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
+                        Selanjutnya kamu boleh melewati atau mengikuti poin ketiga ini agar membantu pengembangan
+                        websitemu, kamu membutuhkan ekstensi <span class="font-bold italic">Live Server</span>
+                        Cara memasang ekstensi :
+                    </p>
+                    <ul class="list-decimal list-inside text-black dark:text-white text-[16px] font-montserrat">
+                        <li class="">klik ikon ekstensi di sidebar kiri <span class="font-bold italic">Visual Studio
+                                Code</span>, biasanya diatas icon botton search</li>
+                        <li class="">Kik search dan cari <span class="font-bold italic">Live Server</span></li>
+                        <li>Install ekstensi tersebut</li>
+                        <li>run ekstensi itu dibawah pojok kanan dengan botton <span class="font-bold italic">Go
+                                Live</span></li>
+                    </ul>
+                    <h3
+                        class="flex items-center font-bold font-montserrat text-[20px] leading-9 md:leading-9  text-black dark:text-white">
+                        ✅ 4. Buat Struktur File Dasar
+                    </h3>
+                    <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
+                        anda dapat membuat file baru dengan nama<span class="font-bold italic">index.html</span>
+
+                        <span class="break-words">
+                            Tutorial cara membuat file di Visual Studio Code :
+                            <a class="font-montserrat font-medium text-supportBlue hover:underline text-[16px]"
+                                href="https://www.youtube.com/results?search_query=cara+membuat+file+html%2C+css%2C+js+di+visual+studio+code+">cara
+                                membuat file html, css, js di visual studio code </a>
+                        </span>
+                    </p>
 
                     <!-- bagian Promting AI -->
-                    <h2 class="flex items-center font-bold font-montserrat text-[32px] leading-9 md:leading-9 text-black dark:text-white mt-14">
+                    <h2
+                        class="flex items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9 text-black dark:text-white mt-14">
                         3. 💡 Menggunakan AI untuk mendapatkan kode website toko anda
                     </h2>
-                        <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
-                            Kamu bisa mendepatkannya dengan mudah dengan sedikit printah sederhana tetapi detail sesuai keingin anda, agar mempermuda anda dalam memodifikasi dan memahami kode website anda berikan perintah berikan keterangan/pejelasan kegunaan pada kode sumber yang diberikan oleh AI. Pastikan anda mempunyai gambar awal atau referensi bagaimana tampilan website anda nanti, kami akan memberikan sedikit contoh perintah AI dalam pengembangan website toko sederhana.
-                            
-                            <span class="mt-4 font-bold">Contoh perintah AI :</span>
-                            <span class=" italic p-4 bg-pinkColor/50 dark:bg-secondBlue rounded-xl my-2">"Buatkan saya kode sebuah website sederhana menggunakan HTML, CSS, dan JavaScript. dengan warna utama hijau dan putih berikan saya penjelesan setiap baris kode agar memudahkan pengeditan tampilan 
-                                Strukturnya seperti ini: <br>
-                                - Halaman homepage dengan judul "Selamat Datang"
-                                - Navbar dengan menu: Beranda, Tentang, Kontak
-                                - Bagian Hero dengan gambar latar belakang dan tombol "Pelajari Lebih Lanjut"
-                                - Bagian Tentang berisi deskripsi singkat
-                                - Bagian produk dengam gambar produk
-                                - Bagian Kontak dengan form (nama, email, pesan)
-                                - Footer dengan teks hak cipta"</span>
-                                
-                                
-                            Kamu bisa peirntahkan apa yang kamu mau dengan bebas dan kreatif tidak harus mengikuti promt diatas
-                        </p>
+                    <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
+                        Kamu bisa mendepatkannya dengan mudah dengan sedikit printah sederhana tetapi detail sesuai
+                        keingin anda, agar mempermuda anda dalam memodifikasi dan memahami kode website anda berikan
+                        perintah berikan keterangan/pejelasan kegunaan pada kode sumber yang diberikan oleh AI. Pastikan
+                        anda mempunyai gambar awal atau referensi bagaimana tampilan website anda nanti, kami akan
+                        memberikan sedikit contoh perintah AI dalam pengembangan website toko sederhana.
+
+                        <span class="mt-4 font-bold">Contoh perintah AI :</span>
+                        <span class=" italic p-4 bg-pinkColor/50 dark:bg-secondBlue rounded-xl my-2">"Buatkan saya kode
+                            sebuah website sederhana menggunakan HTML, CSS, dan JavaScript. dengan warna utama hijau dan
+                            putih berikan saya penjelesan setiap baris kode agar memudahkan pengeditan tampilan
+                            Strukturnya seperti ini: <br>
+                            - Halaman homepage dengan judul "Selamat Datang"
+                            - Navbar dengan menu: Beranda, Tentang, Kontak
+                            - Bagian Hero dengan gambar latar belakang dan tombol "Pelajari Lebih Lanjut"
+                            - Bagian Tentang berisi deskripsi singkat
+                            - Bagian produk dengam gambar produk
+                            - Bagian Kontak dengan form (nama, email, pesan)
+                            - Footer dengan teks hak cipta"</span>
+
+
+                        Kamu bisa peirntahkan apa yang kamu mau dengan bebas dan kreatif tidak harus mengikuti promt
+                        diatas
+                    </p>
 
 
                     <!-- bagian upload dan hosting website menggunakan netlify -->
-                    <h2 class="flex items-center font-bold font-montserrat text-[32px] leading-9 md:leading-9 text-black dark:text-white mt-14">
+                    <h2
+                        class="flex items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9 text-black dark:text-white mt-14">
                         4. 🌐 Upload atau Hosting Website dengan Netlify
-                    </h2>  
-                        <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
-                           Apakah kamu sudah selesai memmbuat website dengan kode HTML, CSS, dan Javascript? dan sekarang waktunya kamu mengonline-kan website mu agar bisa dilihat dan diakses oleh siapa saja. Dengan Netlify kamu bisa mengupload websitemu keinternet dengan mudah, cepat, simpel, dan yang pastinya gratis
-                        </p>
-                        <h3 class="flex items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9  text-black dark:text-white">
-                            🚀 Langkah-Langkah Upload Website ke Netlify
-                        </h3>
-                        
-                        <ul class="list-decimal list-inside text-black dark:text-white text-[16px] font-montserrat">
-                            <li><span class="font-semibold">Masuk ke akun Netlify</span> Buka <a class="font-montserrat font-medium text-supportBlue hover:underline text-[16px]" href="https://app.netlify.com">https://app.netlify.com</a> dan login.</li>
-                            <li><span class="font-semibold">Klik tombol "Add new site"</span> → pilih <span class="font-semibold">"Deploy manually"</span></li>
-                            <li><span class="font-semibold">Drag folder website</span>(Masukkan folder yang kamu buat bukan hanya satu file saja)</li>
-                            <li><span class="font-semibold"><span class="font-semibold">Klik tombol "Add new site"</span></span></li>
-                            <li>Setelah selesai, kamu akan langsung mendapatkan link website-mu secara gratis, misalnya https://namasituskamu.netlify.app.</li>
-                        </ul>
+                    </h2>
+                    <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
+                        Apakah kamu sudah selesai memmbuat website dengan kode HTML, CSS, dan Javascript? dan sekarang
+                        waktunya kamu mengonline-kan website mu agar bisa dilihat dan diakses oleh siapa saja. Dengan
+                        Netlify kamu bisa mengupload websitemu keinternet dengan mudah, cepat, simpel, dan yang pastinya
+                        gratis
+                    </p>
+                    <h3
+                        class="flex items-center font-bold font-montserrat text-[20px] leading-9 md:leading-9  text-black dark:text-white">
+                        🚀 Langkah-Langkah Upload Website ke Netlify
+                    </h3>
+
+                    <ul class="list-decimal list-inside text-black dark:text-white text-[16px] font-montserrat">
+                        <li><span class="font-semibold">Masuk ke akun Netlify</span> Buka <a
+                                class="font-montserrat font-medium text-supportBlue hover:underline text-[16px]"
+                                href="https://app.netlify.com">https://app.netlify.com</a> dan login.</li>
+                        <li><span class="font-semibold">Klik tombol "Add new site"</span> → pilih <span
+                                class="font-semibold">"Deploy manually"</span></li>
+                        <li><span class="font-semibold">Drag folder website</span>(Masukkan folder yang kamu buat bukan
+                            hanya satu file saja)</li>
+                        <li><span class="font-semibold"><span class="font-semibold">Klik tombol "Add new
+                                    site"</span></span></li>
+                        <li>Setelah selesai, kamu akan langsung mendapatkan link website-mu secara gratis, misalnya
+                            https://namasituskamu.netlify.app.</li>
+                    </ul>
 
 
                     <!-- Kesimpulan artikel -->
-                    <h2 class="flex items-center font-bold font-montserrat text-[32px] leading-9 md:leading-9 text-black dark:text-white mt-14">
+                    <h2
+                        class="flex items-center font-bold font-montserrat text-[26px] leading-9 md:leading-9 text-black dark:text-white mt-14">
                         Kesimpulan
                     </h2>
-                        <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
-                            Membuat website toko sederhana kini bukan lagi hal yang sulit, bahkan untuk pemula. Dengan bantuan AI, kamu dapat dengan cepat menghasilkan kode HTML, CSS, dan JavaScript untuk tampilan web yang profesional dan responsif. AI juga dapat membantu menyusun struktur halaman, desain navigasi, hingga fitur seperti form kontak dan tampilan produk.
-                             <br><br>
-                            Setelah website selesai dibuat, kamu bisa langsung meng-online-kan situsmu menggunakan Netlify, layanan hosting gratis yang sangat mudah digunakan. Cukup dengan drag & drop atau integrasi dengan GitHub, website kamu bisa langsung diakses publik melalui domain Netlify.
-                            <br><br>
-                            Langkah-langkah ini membuka peluang besar bagi siapa pun untuk memulai bisnis online, membangun brand, atau sekadar belajar membuat website—semua secara cepat, gratis, dan efisien.
+                    <p class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px]">
+                        Membuat website toko sederhana kini bukan lagi hal yang sulit, bahkan untuk pemula. Dengan
+                        bantuan AI, kamu dapat dengan cepat menghasilkan kode HTML, CSS, dan JavaScript untuk tampilan
+                        web yang profesional dan responsif. AI juga dapat membantu menyusun struktur halaman, desain
+                        navigasi, hingga fitur seperti form kontak dan tampilan produk.
+                        <br><br>
+                        Setelah website selesai dibuat, kamu bisa langsung meng-online-kan situsmu menggunakan Netlify,
+                        layanan hosting gratis yang sangat mudah digunakan. Cukup dengan drag & drop atau integrasi
+                        dengan GitHub, website kamu bisa langsung diakses publik melalui domain Netlify.
+                        <br><br>
+                        Langkah-langkah ini membuka peluang besar bagi siapa pun untuk memulai bisnis online, membangun
+                        brand, atau sekadar belajar membuat website—semua secara cepat, gratis, dan efisien.
 
-                            <span class="font-semibold">Dan jika dirasa kamu kesulitan ketika mengembangkan kami dengan senang hati membantu, Hubungi kami melalui button kontak jika mengalami kendala.</span>
-                         </p>
+                        <span class="font-semibold">Dan jika dirasa kamu kesulitan ketika mengembangkan kami dengan
+                            senang hati membantu, Hubungi kami melalui button kontak jika mengalami kendala.</span>
+                    </p>
 
-                        
-                </article>           
+
+                </article>
+                <div class="my-20 " id="cusdis_thread" data-host="https://cusdis.com"
+                    data-app-id="6a05e4ec-8dd7-46f8-a7d5-970a18285059"
+                    data-page-id="Cara-membuat-website-toko-gratis-dengan-bantuan-openai"
+                    data-page-url="https://genzite.my.id/article/Cara-membuat-website-toko-gratis-dengan-bantuan-openai"
+                    data-page-title="Cara Membuat website toko sederhana dan gratis dengan bantuan AI"></div>
+                <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
             </div>
 
             <div>
 
-            </div>
-    </div>
-
-    <!-- footer page -->
-    <footer class="w-full h-auto bg-gradient-to-b from-pink-300 to-supportPink dark:to-supportBlue dark:from-primaryBlue" role="contentinfo ">
-        <div class="max-w-screen-xl mx-auto px-5 py-7 flex flex-col md:flex-row justify-between gap-14">
-            <div>
-                <img src="../assets/images/logogenzite.svg" class="w-52 h-52 -ml-10 -mt-10" loading="lazy" alt="Logo Genzite">
-                <h4 class="font-montserrat font-bold text-black dark:text-white text-[26px] lg:text-[40px] -mt-10">
-                <span class="text-purplecolor">g</span>enzite<span class="text-red-500">id</span>
-                </h4>
-                <h2 class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px] max-w-[400px]">
-                    Genzite adalah jasa pembuat website untuk membantu UMKM dan pedangang kecil mempunyai website modern dan terjangkau    
-                </h2>
-            </div> 
-            <div class="flex flex-col md:flex-row gap-5 md:gap-20">
-                <nav aria-label="Footer Navigation Menu" class="flex flex-col p-4">
-                    <h3 class="text-black dark:text-white text-[20px] font-montserrat font-bold mb-4">Menu</h3>
-                    <a class="font-montserrat font-semibold hover:font-bold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="../index.html#homepage">Beranda</a>
-                    <a class="font-montserrat font-semibold hover:font-bold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="./artikel-dan-project.html">Artikel</a>
-                    <a class="font-montserrat font-semibold hover:font-bold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="../index.html#kontakpage">Kontak</a>
-                    
-                </nav>
-                
-                <section aria-label="Contact information" class="flex flex-col p-4">
-                    <h3 class="text-black dark:text-white text-[20px] font-montserrat font-bold mb-4">Kontak</h3>
-                    <span class="flex items-center gap-2">
-                        <i class="fa-brands fa-whatsapp dark:text-white"></i>
-                        <a class="font-montserrat font-semibold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="https://wa.me/+6287742217980" aria-label="Chat via WhatsApp">WhatsApp</a>
-                    </span>
-                    
-                    <span class="flex items-center gap-2">
-                        <i class="fa-brands fa-instagram dark:text-white"></i>
-                        <a class="font-montserrat font-semibold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2" href="https://www.instagram.com/genzite.id?igsh=bG9sb294bDlvM2xi" aria-label="Visit Instagram Profile">Instagram</a>
-                    </span>
-                </section>
             </div>
         </div>
-    </footer>
+
+        <!-- footer page -->
+        <footer
+            class="w-full h-auto bg-gradient-to-b from-pink-300 to-supportPink dark:to-supportBlue dark:from-primaryBlue"
+            role="contentinfo ">
+            <div class="max-w-screen-xl mx-auto px-5 py-7 flex flex-col md:flex-row justify-between gap-14">
+                <div>
+                    <img src="../assets/images/logogenzite.svg" class="w-52 h-52 -ml-10 -mt-10" loading="lazy"
+                        alt="Logo Genzite">
+                    <h4 class="font-montserrat font-bold text-black dark:text-white text-[26px] lg:text-[40px] -mt-10">
+                        <span class="text-purplecolor">g</span>enzite<span class="text-red-500">id</span>
+                    </h4>
+                    <h2
+                        class="flex flex-col font-montserrat font-medium text-black dark:text-white text-[16px] max-w-[400px]">
+                        Genzite adalah jasa pembuat website untuk membantu UMKM dan pedangang kecil mempunyai website
+                        modern dan terjangkau
+                    </h2>
+                </div>
+                <div class="flex flex-col md:flex-row gap-5 md:gap-20">
+                    <nav aria-label="Footer Navigation Menu" class="flex flex-col p-4">
+                        <h3 class="text-black dark:text-white text-[20px] font-montserrat font-bold mb-4">Menu</h3>
+                        <a class="font-montser0at font-semibold hover:font-bold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2"
+                            href="../index.html#homepage">Beranda</a>
+                        <a class="font-montserrat font-semibold hover:font-bold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2"
+                            href="./artikel-dan-project.html">Artikel</a>
+                        <a class="font-montserrat font-semibold hover:font-bold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2"
+                            href="../index.html#kontakpage">Kontak</a>
+
+                    </nav>
+
+                    <section aria-label="Contact information" class="flex flex-col p-4">
+                        <h3 class="text-black dark:text-white text-[20px] font-montserrat font-bold mb-4">Kontak</h3>
+                        <span class="flex it0ms-center gap-2">
+                            <i class="fa-brands fa-whatsapp dark:text-white"></i>
+                            <a class="font-montserrat font-semibold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2"
+                                href="https://wa.me/+6287742217980" aria-label="Chat via WhatsApp">WhatsApp</a>
+                        </span>
+
+                        <span class="flex items-center gap-2">
+                            <i class="fa-brands fa-instagram dark:text-white"></i>
+                            <a class="font-montserrat font-semibold text-[16px] text-gray-400 hover:text-black dark:text-slate-400 dark:hover:text-white duration-300 py-2"
+                                href="https://www.instagram.com/genzite.id?igsh=bG9sb294bDlvM2xi"
+                                aria-label="Visit Instagram Profile">Instagram</a>
+                        </span>
+                    </section>
+                </div>
+            </div>
+        </footer>
         <!-- Copyright -->
         <div class="bg-supportPink dark:bg-supportBlue w-full h-auto backdrop-blur-md">
-            <div class="max-w-screen-xl mx-auto h-auto flex flex-col md:flex-row items-start md:items-center justify-between p-5 gap-5">
+            <div
+                class="max-w-screen-xl mx-auto h-auto flex flex-col md:flex-row items-start md:items-center justify-between p-5 gap-5">
                 <p class="font-raleway font-semibold text-black dark:text-white text-[10px] md:text-[16px]">
-                    &copy; 2025–2026 <a class="text-supportBlue dark:text-supportPink" href="">GenziteID.</a> Dibuat dengan penuh ❤️ perhatian untuk bisnis lokal. 
+                    &copy; 2025–2026 <a class="text-supportBlue dark:text-supportPink" href="">GenziteID.</a> Dibuat
+                    dengan penuh ❤️ perhatian untuk bisnis lokal.
                 </p>
                 <span class="flex font-montserrat font-semibold text-black dark:text-white text-[20px] gap-2">
                     <a href="https://wa.me/+6287742217980">
@@ -369,5 +483,5 @@
             </div>
         </div>
 </body>
+
 </html>
-            
